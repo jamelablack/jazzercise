@@ -1,0 +1,29 @@
+<h1>Listing jclsglobals</h1>
+
+<table>
+  <tr>
+    <th>Objectid</th>
+    <th>Faxbodytext</th>
+    <th>Searchradius</th>
+    <th>Faxheadertext</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jclsglobals.each do |jclsglobal| %>
+  <tr>
+    <td><%= jclsglobal.ObjectID %></td>
+    <td><%= jclsglobal.FaxBodyText %></td>
+    <td><%= jclsglobal.SearchRadius %></td>
+    <td><%= jclsglobal.FaxHeaderText %></td>
+    <td><%= link_to 'Show', jclsglobal %></td>
+    <td><%= link_to 'Edit', edit_jclsglobal_path(jclsglobal) %></td>
+    <td><%= link_to 'Destroy', jclsglobal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Jclsglobal', new_jclsglobal_path %>

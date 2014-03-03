@@ -1,0 +1,36 @@
+class AllGlobal < ActiveRecord::Base
+  attr_accessible :boo_value, :category, :date_value, :dec_value, :effective_date, :int_value, :key_name, :str_value, :value_type
+  
+VALUE_TYPE_STRING = 1
+VALUE_TYPE_INTEGER = 2
+VALUE_TYPE_DECIMAL = 3
+VALUE_TYPE_DATETIME = 4
+VALUE_TYPE_BOOLEAN = 5
+
+  
+  def global_value
+  	if value_type == VALUE_TYPE_STRING
+  	 	self.str_value
+  	else
+  		nil
+    end
+  end
+
+
+  def self.global_for(key_name, category=nil, effective_date=nil)
+  	value = nil
+  	#if ( !category and !effective_date)
+  	#  value = where(key_name: key_name).first
+  	#else if  !effective_date
+  	#  value = where(key_name: key_name, category: category).first
+	#end
+	return value
+  end
+
+  def value
+  	send(VALUE_TYPES[value_type])
+  end
+
+end
+
+

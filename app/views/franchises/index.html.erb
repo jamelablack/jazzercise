@@ -1,0 +1,69 @@
+<h1>Listing franchises</h1>
+
+<table>
+  <tr>
+    <th>Comments</th>
+    <th>Printletter</th>
+    <th>Floatingsub</th>
+    <th>Instructoraccountobjectid</th>
+    <th>Objectid</th>
+    <th>Franchisetypeaddendum</th>
+    <th>Dateacknowledged</th>
+    <th>Beginningrptdate</th>
+    <th>Instructorobjectid</th>
+    <th>Dateagreementsigned</th>
+    <th>Datetrainingmatsent</th>
+    <th>Franchisetype</th>
+    <th>Districtobjectid</th>
+    <th>Expirationdate</th>
+    <th>Cffdate</th>
+    <th>Feercvd</th>
+    <th>Feeamount</th>
+    <th>Dateapplicationrcvd</th>
+    <th>Datecsprinted</th>
+    <th>Inactive</th>
+    <th>Dateagreementsent</th>
+    <th>Cffpctcalc</th>
+    <th>Mainfranchise</th>
+    <th>Monthlymin</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @franchises.each do |franchise| %>
+  <tr>
+    <td><%= franchise.Comments %></td>
+    <td><%= franchise.PrintLetter %></td>
+    <td><%= franchise.FloatingSub %></td>
+    <td><%= franchise.InstructorAccountObjectID %></td>
+    <td><%= franchise.ObjectID %></td>
+    <td><%= franchise.FranchiseTypeAddendum %></td>
+    <td><%= franchise.DateAcknowledged %></td>
+    <td><%= franchise.BeginningRptDate %></td>
+    <td><%= franchise.InstructorObjectID %></td>
+    <td><%= franchise.DateAgreementSigned %></td>
+    <td><%= franchise.DateTrainingMatSent %></td>
+    <td><%= franchise.FranchiseType %></td>
+    <td><%= franchise.DistrictObjectID %></td>
+    <td><%= franchise.ExpirationDate %></td>
+    <td><%= franchise.CFFDate %></td>
+    <td><%= franchise.FeeRcvd %></td>
+    <td><%= franchise.FeeAmount %></td>
+    <td><%= franchise.DateApplicationRcvd %></td>
+    <td><%= franchise.DateCSPrinted %></td>
+    <td><%= franchise.Inactive %></td>
+    <td><%= franchise.DateAgreementSent %></td>
+    <td><%= franchise.CFFPctCalc %></td>
+    <td><%= franchise.MainFranchise %></td>
+    <td><%= franchise.MonthlyMin %></td>
+    <td><%= link_to 'Show', franchise %></td>
+    <td><%= link_to 'Edit', edit_franchise_path(franchise) %></td>
+    <td><%= link_to 'Destroy', franchise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Franchise', new_franchise_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @qc_report.ObjectID %>
+</p>
+
+<p>
+  <b>Reportperiod:</b>
+  <%= @qc_report.ReportPeriod %>
+</p>
+
+<p>
+  <b>Payrollperiod:</b>
+  <%= @qc_report.PayrollPeriod %>
+</p>
+
+<p>
+  <b>Coordinatorobjectid:</b>
+  <%= @qc_report.CoordinatorObjectID %>
+</p>
+
+<p>
+  <b>Isapproved:</b>
+  <%= @qc_report.IsApproved %>
+</p>
+
+<p>
+  <b>Dmobjectid:</b>
+  <%= @qc_report.DMObjectID %>
+</p>
+
+
+<%= link_to 'Edit', edit_qc_report_path(@qc_report) %> |
+<%= link_to 'Back', qc_reports_path %>

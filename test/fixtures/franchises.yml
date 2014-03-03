@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Comments: MyString
+  PrintLetter: 1
+  FloatingSub: 1
+  InstructorAccountObjectID: 1
+  ObjectID: 1
+  FranchiseTypeAddendum: MyString
+  DateAcknowledged: 2013-11-18 23:20:03
+  BeginningRptDate: 2013-11-18 23:20:03
+  InstructorObjectID: 1
+  DateAgreementSigned: 2013-11-18 23:20:03
+  DateTrainingMatSent: 2013-11-18 23:20:03
+  FranchiseType: MyString
+  DistrictObjectID: 1
+  ExpirationDate: 2013-11-18 23:20:03
+  CFFDate: 2013-11-18 23:20:03
+  FeeRcvd: MyString
+  FeeAmount: 9.99
+  DateApplicationRcvd: 2013-11-18 23:20:03
+  DateCSPrinted: 2013-11-18 23:20:03
+  Inactive: 1
+  DateAgreementSent: 1
+  CFFPctCalc: 1
+  MainFranchise: 1
+  MonthlyMin: 9.99
+
+two:
+  Comments: MyString
+  PrintLetter: 1
+  FloatingSub: 1
+  InstructorAccountObjectID: 1
+  ObjectID: 1
+  FranchiseTypeAddendum: MyString
+  DateAcknowledged: 2013-11-18 23:20:03
+  BeginningRptDate: 2013-11-18 23:20:03
+  InstructorObjectID: 1
+  DateAgreementSigned: 2013-11-18 23:20:03
+  DateTrainingMatSent: 2013-11-18 23:20:03
+  FranchiseType: MyString
+  DistrictObjectID: 1
+  ExpirationDate: 2013-11-18 23:20:03
+  CFFDate: 2013-11-18 23:20:03
+  FeeRcvd: MyString
+  FeeAmount: 9.99
+  DateApplicationRcvd: 2013-11-18 23:20:03
+  DateCSPrinted: 2013-11-18 23:20:03
+  Inactive: 1
+  DateAgreementSent: 1
+  CFFPctCalc: 1
+  MainFranchise: 1
+  MonthlyMin: 9.99

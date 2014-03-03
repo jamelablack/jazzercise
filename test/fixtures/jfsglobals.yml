@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  AccountingMonth: 2013-10-21 06:38:09
+  ContactEmail: MyString
+  ContactName: MyString
+  ContactSubject: MyString
+  FranMonthMin: 1.5
+  MIRCutoffDay: 1
+  MIRLateFee: 1.5
+  ObjectID: 1
+  SubstituteFee: 1.5
+  WeeklyFee: 1.5
+  ResTermMsg: MyString
+  ResTermSub: MyString
+  GLEntryNo: 1
+  ProcessES: false
+  SubMIRLateFee: 1.5
+  SubMIRCutoffDay: 1
+
+two:
+  AccountingMonth: 2013-10-21 06:38:09
+  ContactEmail: MyString
+  ContactName: MyString
+  ContactSubject: MyString
+  FranMonthMin: 1.5
+  MIRCutoffDay: 1
+  MIRLateFee: 1.5
+  ObjectID: 1
+  SubstituteFee: 1.5
+  WeeklyFee: 1.5
+  ResTermMsg: MyString
+  ResTermSub: MyString
+  GLEntryNo: 1
+  ProcessES: false
+  SubMIRLateFee: 1.5
+  SubMIRCutoffDay: 1

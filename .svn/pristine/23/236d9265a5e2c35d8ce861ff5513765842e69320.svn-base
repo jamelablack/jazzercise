@@ -1,0 +1,105 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Achtransactionfee:</b>
+  <%= @global.ACHTransactionFee %>
+</p>
+
+<p>
+  <b>Adminemail:</b>
+  <%= @global.AdminEMail %>
+</p>
+
+<p>
+  <b>Adminmailerfrom:</b>
+  <%= @global.AdminMailerFrom %>
+</p>
+
+<p>
+  <b>Host:</b>
+  <%= @global.Host %>
+</p>
+
+<p>
+  <b>Organization:</b>
+  <%= @global.Organization %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @global.UserName %>
+</p>
+
+<p>
+  <b>Accountingdate:</b>
+  <%= @global.AccountingDate %>
+</p>
+
+<p>
+  <b>Cctransactionfee:</b>
+  <%= @global.CCTransactionFee %>
+</p>
+
+<p>
+  <b>Paymentchangefee:</b>
+  <%= @global.PaymentChangeFee %>
+</p>
+
+<p>
+  <b>Dailydate:</b>
+  <%= @global.DailyDate %>
+</p>
+
+<p>
+  <b>Dailyfileindex:</b>
+  <%= @global.DailyFileIndex %>
+</p>
+
+<p>
+  <b>Insufficientfundsfee:</b>
+  <%= @global.InsufficientFundsFee %>
+</p>
+
+<p>
+  <b>Instructorsignupfee:</b>
+  <%= @global.InstructorSignUpFee %>
+</p>
+
+<p>
+  <b>Macolareceive:</b>
+  <%= @global.MacolaReceive %>
+</p>
+
+<p>
+  <b>Macolasend:</b>
+  <%= @global.MacolaSend %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @global.ObjectID %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @global.Password %>
+</p>
+
+<p>
+  <b>Expirationdays:</b>
+  <%= @global.ExpirationDays %>
+</p>
+
+<p>
+  <b>Studentsignupfee:</b>
+  <%= @global.StudentSignUpFee %>
+</p>
+
+<p>
+  <b>Transhistorydate:</b>
+  <%= @global.TransHistoryDate %>
+</p>
+
+
+<%= link_to 'Edit', edit_global_path(@global) %> |
+<%= link_to 'Back', globals_path %>

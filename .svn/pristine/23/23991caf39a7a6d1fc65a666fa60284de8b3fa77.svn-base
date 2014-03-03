@@ -1,0 +1,93 @@
+<%= form_for(@global) do |f| %>
+  <% if @global.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@global.errors.count, "error") %> prohibited this global from being saved:</h2>
+
+      <ul>
+      <% @global.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ACHTransactionFee %><br />
+    <%= f.text_field :ACHTransactionFee %>
+  </div>
+  <div class="field">
+    <%= f.label :AdminEMail %><br />
+    <%= f.text_field :AdminEMail %>
+  </div>
+  <div class="field">
+    <%= f.label :AdminMailerFrom %><br />
+    <%= f.text_field :AdminMailerFrom %>
+  </div>
+  <div class="field">
+    <%= f.label :Host %><br />
+    <%= f.text_field :Host %>
+  </div>
+  <div class="field">
+    <%= f.label :Organization %><br />
+    <%= f.text_field :Organization %>
+  </div>
+  <div class="field">
+    <%= f.label :UserName %><br />
+    <%= f.text_field :UserName %>
+  </div>
+  <div class="field">
+    <%= f.label :AccountingDate %><br />
+    <%= f.datetime_select :AccountingDate %>
+  </div>
+  <div class="field">
+    <%= f.label :CCTransactionFee %><br />
+    <%= f.text_field :CCTransactionFee %>
+  </div>
+  <div class="field">
+    <%= f.label :PaymentChangeFee %><br />
+    <%= f.text_field :PaymentChangeFee %>
+  </div>
+  <div class="field">
+    <%= f.label :DailyDate %><br />
+    <%= f.datetime_select :DailyDate %>
+  </div>
+  <div class="field">
+    <%= f.label :DailyFileIndex %><br />
+    <%= f.number_field :DailyFileIndex %>
+  </div>
+  <div class="field">
+    <%= f.label :InsufficientFundsFee %><br />
+    <%= f.text_field :InsufficientFundsFee %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorSignUpFee %><br />
+    <%= f.text_field :InstructorSignUpFee %>
+  </div>
+  <div class="field">
+    <%= f.label :MacolaReceive %><br />
+    <%= f.text_field :MacolaReceive %>
+  </div>
+  <div class="field">
+    <%= f.label :MacolaSend %><br />
+    <%= f.text_field :MacolaSend %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :PasswordExpirationDays %><br />
+    <%= f.number_field :ExpirationDays %>
+  </div>
+  <div class="field">
+    <%= f.label :StudentSignUpFee %><br />
+    <%= f.text_field :StudentSignUpFee %>
+  </div>
+  <div class="field">
+    <%= f.label :TransHistoryDate %><br />
+    <%= f.datetime_select :TransHistoryDate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

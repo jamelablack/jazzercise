@@ -1,0 +1,5 @@
+<h1>New jacs_global</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', jacs_globals_path %>

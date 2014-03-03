@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  InsuranceStartDate: 2013-11-20 20:14:05
+  InsRate: 9.99
+  ObjectID: 1
+  Deleted: false
+  InsurancePolicyNumber: MyString
+  InsuranceEndDate: 2013-11-20 20:14:05
+  InsType: MyString
+  InsuranceKind: MyString
+
+two:
+  InsuranceStartDate: 2013-11-20 20:14:05
+  InsRate: 9.99
+  ObjectID: 1
+  Deleted: false
+  InsurancePolicyNumber: MyString
+  InsuranceEndDate: 2013-11-20 20:14:05
+  InsType: MyString
+  InsuranceKind: MyString

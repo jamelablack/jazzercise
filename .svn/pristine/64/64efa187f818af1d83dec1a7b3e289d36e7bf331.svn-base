@@ -1,0 +1,162 @@
+# encoding: UTF-8
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.rb definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using db:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended to check this file into your version control system.
+
+ActiveRecord::Schema.define(:version => 20131029022326) do
+
+  create_table "Person", :primary_key => "ObjectID", :force => true do |t|
+    t.datetime "BirthDate"
+    t.string   "EMail"
+    t.string   "FirstName"
+    t.string   "FullName"
+    t.string   "Gender"
+    t.string   "LastName"
+    t.string   "PhonePrimary"
+    t.string   "PhoneFax"
+    t.string   "NickName"
+    t.string   "PhoneSecondary"
+    t.string   "SSN"
+    t.integer  "UserPersonObjectID"
+    t.boolean  "SendSpecials"
+    t.boolean  "SendCatalog"
+    t.boolean  "SendToOthers"
+    t.boolean  "SendNews"
+  end
+
+  add_index "person", ["FirstName", "LastName"], :name => "Person_firstname_lastname_index"
+
+  create_table "UserPerson", :primary_key => "ObjectID", :force => true do |t|
+    t.boolean  "AllowLogon"
+    t.boolean  "AutoLockout"
+    t.datetime "UPDateTime"
+    t.string   "DeletedUserIDKey"
+    t.string   "DeletedAutoLockoutKey"
+    t.boolean  "Deleted"
+    t.string   "DeletedAllowLogonKey"
+    t.string   "Password"
+    t.string   "UserID"
+    t.boolean  "PWForceChange"
+    t.string   "PWHelpQuestion"
+    t.string   "PWHelpAnswer"
+    t.string   "EncUserID"
+  end
+
+  create_table "UserPersonRole", :force => true do |t|
+    t.integer "RoleOID"
+    t.integer "UserPersonOID"
+  end
+
+  create_table "eftglobals", :force => true do |t|
+    t.datetime "ACHCutoffDate"
+    t.datetime "ACHDocsCutoffDate"
+    t.datetime "CCCutoffDate"
+    t.datetime "CCDocsCutoffDate"
+    t.integer  "ObjectID"
+    t.integer  "StudentIDLengthMin"
+    t.integer  "StudentIDLengthMax"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "globals", :force => true do |t|
+    t.decimal  "ACHTransactionFee",    :precision => 13, :scale => 2
+    t.string   "AdminEMail"
+    t.string   "AdminMailerFrom"
+    t.string   "Host"
+    t.string   "Organization"
+    t.string   "UserName"
+    t.datetime "AccountingDate"
+    t.decimal  "CCTransactionFee",     :precision => 13, :scale => 2
+    t.decimal  "PaymentChangeFee",     :precision => 13, :scale => 2
+    t.datetime "DailyDate"
+    t.integer  "DailyFileIndex"
+    t.decimal  "InsufficientFundsFee", :precision => 13, :scale => 2
+    t.decimal  "InstructorSignUpFee",  :precision => 13, :scale => 2
+    t.string   "MacolaReceive"
+    t.string   "MacolaSend"
+    t.integer  "ObjectID"
+    t.string   "Password"
+    t.integer  "ExpirationDays"
+    t.decimal  "StudentSignUpFee",     :precision => 13, :scale => 2
+    t.datetime "TransHistoryDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jacs_globals", :force => true do |t|
+    t.string   "Category"
+    t.string   "Key_Name"
+    t.string   "Str_Value"
+    t.decimal  "Dec_Value",      :precision => 10, :scale => 0
+    t.datetime "Datetime_Value"
+    t.datetime "Effective_Date"
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
+  end
+
+  create_table "jfsglobals", :force => true do |t|
+    t.datetime "AccountingMonth"
+    t.string   "ContactEmail"
+    t.string   "ContactName"
+    t.string   "ContactSubject"
+    t.decimal  "FranMonthMin",    :precision => 13, :scale => 2
+    t.integer  "MIRCutoffDay"
+    t.decimal  "MIRLateFee",      :precision => 13, :scale => 2
+    t.integer  "ObjectID"
+    t.decimal  "SubstituteFee",   :precision => 13, :scale => 2
+    t.decimal  "WeeklyFee",       :precision => 13, :scale => 2
+    t.string   "ResTermMsg"
+    t.string   "ResTermSub"
+    t.integer  "GLEntryNo"
+    t.boolean  "ProcessES"
+    t.decimal  "SubMIRLateFee",   :precision => 13, :scale => 2
+    t.integer  "SubMIRCutoffDay"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "qc_globals", :force => true do |t|
+    t.integer  "ObjectID"
+    t.decimal  "EvaluationPay",    :precision => 13, :scale => 2
+    t.decimal  "PracticePay",      :precision => 13, :scale => 2
+    t.decimal  "ScreeningPay",     :precision => 13, :scale => 2
+    t.decimal  "HourlyPay",        :precision => 13, :scale => 2
+    t.decimal  "Mileage",          :precision => 6,  :scale => 3
+    t.integer  "MileageCutoff"
+    t.integer  "PayrollCutoffDay"
+    t.string   "ReportPeriod"
+    t.string   "TravelTiers"
+    t.decimal  "VideoPay",         :precision => 13, :scale => 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "role", :primary_key => "ObjectID", :force => true do |t|
+    t.boolean "AutomaticRole"
+    t.string  "ApplicationName"
+    t.string  "ButtonText"
+    t.string  "PlainText"
+    t.string  "RoleID"
+    t.string  "TemplateName"
+    t.integer "TimeOut"
+    t.boolean "LockOut"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+end

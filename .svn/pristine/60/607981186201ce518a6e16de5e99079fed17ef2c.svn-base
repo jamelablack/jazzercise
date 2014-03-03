@@ -1,0 +1,89 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+<p>
+  <b>Birthdate:</b>
+  <%= @person.BirthDate %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @person.EMail %>
+</p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @person.FirstName %>
+</p>
+
+<p>
+  <b>Fullname:</b>
+  <%= @person.FullName %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @person.Gender %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @person.LastName %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @person.ObjectID %>
+</p>
+
+<p>
+  <b>Phoneprimary:</b>
+  <%= @person.PhonePrimary %>
+</p>
+
+<p>
+  <b>Phonesecondary:</b>
+  <%= @person.PhoneSecondary %>
+</p>
+
+<p>
+  <b>Ssn:</b>
+  <%= @person.SSN %>
+</p>
+
+<p>
+  <b>Userpersonobjectid:</b>
+  <%= @person.UserPersonObjectID %>
+</p>
+
+<p>
+  <b>Sendspecials:</b>
+  <%= @person.SendSpecials %>
+</p>
+
+<p>
+  <b>Sendcatalog:</b>
+  <%= @person.SendCatalog %>
+</p>
+
+<p>
+  <b>Sendtoothers:</b>
+  <%= @person.SendToOthers %>
+</p>
+
+<p>
+  <b>Sendnews:</b>
+  <%= @person.SendNews %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
+
+
+</div>
+  <div class="clr"></div>
+</div>

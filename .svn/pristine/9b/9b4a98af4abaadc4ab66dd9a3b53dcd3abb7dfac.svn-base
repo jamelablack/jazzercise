@@ -1,0 +1,6 @@
+<h1>Editing jfsglobal</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @jfsglobal %> |
+<%= link_to 'Back', jfsglobals_path %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ObjectID: 1
+  Status: MyString
+  InstructorObjectID: 1
+  FacilityObjectID: 1
+  Name: MyString
+  FranchiseObjectID: 1
+  NewInstructor: 1
+  JBSAccountObjectID: 1
+
+two:
+  ObjectID: 1
+  Status: MyString
+  InstructorObjectID: 1
+  FacilityObjectID: 1
+  Name: MyString
+  FranchiseObjectID: 1
+  NewInstructor: 1
+  JBSAccountObjectID: 1

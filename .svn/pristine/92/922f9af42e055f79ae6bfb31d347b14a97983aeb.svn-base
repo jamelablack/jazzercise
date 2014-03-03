@@ -1,0 +1,37 @@
+<h1>Listing facilityinstructors</h1>
+
+<table>
+  <tr>
+    <th>Lastname</th>
+    <th>Objectid</th>
+    <th>Showorder</th>
+    <th>Pendingaction</th>
+    <th>Instructorobjectid</th>
+    <th>Facilityobjectid</th>
+    <th>Firstname</th>
+    <th>Pending</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @facilityinstructors.each do |facilityinstructor| %>
+  <tr>
+    <td><%= facilityinstructor.Lastname %></td>
+    <td><%= facilityinstructor.ObjectID %></td>
+    <td><%= facilityinstructor.ShowOrder %></td>
+    <td><%= facilityinstructor.PendingAction %></td>
+    <td><%= facilityinstructor.InstructorObjectID %></td>
+    <td><%= facilityinstructor.FacilityObjectID %></td>
+    <td><%= facilityinstructor.FirstName %></td>
+    <td><%= facilityinstructor.Pending %></td>
+    <td><%= link_to 'Show', facilityinstructor %></td>
+    <td><%= link_to 'Edit', edit_facilityinstructor_path(facilityinstructor) %></td>
+    <td><%= link_to 'Destroy', facilityinstructor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Facilityinstructor', new_facilityinstructor_path %>

@@ -1,0 +1,49 @@
+<%= form_for(@facilityinstructor) do |f| %>
+  <% if @facilityinstructor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@facilityinstructor.errors.count, "error") %> prohibited this facilityinstructor from being saved:</h2>
+
+      <ul>
+      <% @facilityinstructor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Lastname %><br />
+    <%= f.text_field :Lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :ShowOrder %><br />
+    <%= f.number_field :ShowOrder %>
+  </div>
+  <div class="field">
+    <%= f.label :PendingAction %><br />
+    <%= f.text_field :PendingAction %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorObjectID %><br />
+    <%= f.number_field :InstructorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :FacilityObjectID %><br />
+    <%= f.number_field :FacilityObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :FirstName %><br />
+    <%= f.text_field :FirstName %>
+  </div>
+  <div class="field">
+    <%= f.label :Pending %><br />
+    <%= f.number_field :Pending %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

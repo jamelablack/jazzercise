@@ -1,0 +1,3 @@
+class Address < ActiveRecord::Base
+  attr_accessible :Address1, :Address2, :Address3, :AddressType, :AssociatedObjectID, :AssociatedType, :City, :CountryObjectID, :ObjectID, :StateObjectID, :ZipCode
+end

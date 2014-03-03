@@ -1,0 +1,33 @@
+<h1>Listing qc_reports</h1>
+
+<table>
+  <tr>
+    <th>Objectid</th>
+    <th>Reportperiod</th>
+    <th>Payrollperiod</th>
+    <th>Coordinatorobjectid</th>
+    <th>Isapproved</th>
+    <th>Dmobjectid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qc_reports.each do |qc_report| %>
+  <tr>
+    <td><%= qc_report.ObjectID %></td>
+    <td><%= qc_report.ReportPeriod %></td>
+    <td><%= qc_report.PayrollPeriod %></td>
+    <td><%= qc_report.CoordinatorObjectID %></td>
+    <td><%= qc_report.IsApproved %></td>
+    <td><%= qc_report.DMObjectID %></td>
+    <td><%= link_to 'Show', qc_report %></td>
+    <td><%= link_to 'Edit', edit_qc_report_path(qc_report) %></td>
+    <td><%= link_to 'Destroy', qc_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Qc report', new_qc_report_path %>

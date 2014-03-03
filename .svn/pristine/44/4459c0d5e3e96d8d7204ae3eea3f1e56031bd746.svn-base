@@ -1,0 +1,3 @@
+class Facility < ActiveRecord::Base
+  attr_accessible :AddressLocalArea, :Approved, :AttributeCC, :AttributeCH, :AttributeKD, :AttributeLK, :AttributeMA, :AttributePT, :AttributeRB, :AttributeSH, :AttributeST, :AttributeWF, :AttributeWT, :AttributeXT, :CenterCode, :Deleted, :Directions, :DistrictObjectID, :EMail, :EndMonth, :ExWeb, :FacilityNumber, :Highway, :InstructorObjectID, :Landmark, :LocChange, :Name, :Notes, :ObjectID, :PhoneFax, :PhonePrimary, :PhoneSecondary, :StartMonth
+end

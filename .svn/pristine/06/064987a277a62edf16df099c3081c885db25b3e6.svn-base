@@ -1,0 +1,48 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+
+
+
+<h1>Listing eftglobals</h1>
+
+<table>
+  <tr>
+    <th>Achcutoffdate</th>
+    <th>Achdocscutoffdate</th>
+    <th>Cccutoffdate</th>
+    <th>Ccdocscutoffdate</th>
+    <th>Objectid</th>
+    <th>Studentidlengthmin</th>
+    <th>Studentidlengthmax</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @eftglobals.each do |eftglobal| %>
+  <tr>
+    <td><%= eftglobal.ACHCutoffDate %></td>
+    <td><%= eftglobal.ACHDocsCutoffDate %></td>
+    <td><%= eftglobal.CCCutoffDate %></td>
+    <td><%= eftglobal.CCDocsCutoffDate %></td>
+    <td><%= eftglobal.ObjectID %></td>
+    <td><%= eftglobal.StudentIDLengthMin %></td>
+    <td><%= eftglobal.StudentIDLengthMax %></td>
+    <td><%= link_to 'Show', eftglobal %></td>
+    <td><%= link_to 'Edit', edit_eftglobal_path(eftglobal) %></td>
+    <td><%= link_to 'Destroy', eftglobal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Eftglobal', new_eftglobal_path %>
+
+ </div>
+  <div class="clr"></div>
+</div>

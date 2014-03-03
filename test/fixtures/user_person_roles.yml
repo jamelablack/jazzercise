@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  RoleOID: 1
+  UserOIDRoleOID: 1
+  UserPersonOID: 1
+
+two:
+  RoleOID: 1
+  UserOIDRoleOID: 1
+  UserPersonOID: 1

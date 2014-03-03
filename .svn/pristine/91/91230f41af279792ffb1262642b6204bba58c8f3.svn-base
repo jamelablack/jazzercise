@@ -1,0 +1,165 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Enddate:</b>
+  <%= @jclsclass.EndDate %>
+</p>
+
+<p>
+  <b>Daywednesday:</b>
+  <%= @jclsclass.DayWednesday %>
+</p>
+
+<p>
+  <b>Daysaturday:</b>
+  <%= @jclsclass.DaySaturday %>
+</p>
+
+<p>
+  <b>Zipcodepopulation:</b>
+  <%= @jclsclass.ZipCodePopulation %>
+</p>
+
+<p>
+  <b>Nearbyfacilitymiles:</b>
+  <%= @jclsclass.NearbyFacilityMiles %>
+</p>
+
+<p>
+  <b>Formatr:</b>
+  <%= @jclsclass.FormatR %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @jclsclass.ObjectID %>
+</p>
+
+<p>
+  <b>Deleted:</b>
+  <%= @jclsclass.Deleted %>
+</p>
+
+<p>
+  <b>Citypopulation:</b>
+  <%= @jclsclass.CityPopulation %>
+</p>
+
+<p>
+  <b>Formatcq:</b>
+  <%= @jclsclass.FormatCQ %>
+</p>
+
+<p>
+  <b>Formatbs:</b>
+  <%= @jclsclass.FormatBS %>
+</p>
+
+<p>
+  <b>Instructorobjectid:</b>
+  <%= @jclsclass.InstructorObjectID %>
+</p>
+
+<p>
+  <b>Formatct:</b>
+  <%= @jclsclass.FormatCT %>
+</p>
+
+<p>
+  <b>Formatex:</b>
+  <%= @jclsclass.FormatEX %>
+</p>
+
+<p>
+  <b>Formatjp:</b>
+  <%= @jclsclass.FormatJP %>
+</p>
+
+<p>
+  <b>Newclass:</b>
+  <%= @jclsclass.NewClass %>
+</p>
+
+<p>
+  <b>Formatjr:</b>
+  <%= @jclsclass.FormatJR %>
+</p>
+
+<p>
+  <b>Facilityobjectid:</b>
+  <%= @jclsclass.FacilityObjectID %>
+</p>
+
+<p>
+  <b>Formattd:</b>
+  <%= @jclsclass.FormatTD %>
+</p>
+
+<p>
+  <b>Formatsl:</b>
+  <%= @jclsclass.FormatSL %>
+</p>
+
+<p>
+  <b>Formatpt:</b>
+  <%= @jclsclass.FormatPT %>
+</p>
+
+<p>
+  <b>Formatst:</b>
+  <%= @jclsclass.FormatST %>
+</p>
+
+<p>
+  <b>Misc:</b>
+  <%= @jclsclass.Misc %>
+</p>
+
+<p>
+  <b>X time x:</b>
+  <%= @jclsclass.X_Time_X %>
+</p>
+
+<p>
+  <b>Startdate:</b>
+  <%= @jclsclass.StartDate %>
+</p>
+
+<p>
+  <b>Daysunday:</b>
+  <%= @jclsclass.DaySunday %>
+</p>
+
+<p>
+  <b>Daymonday:</b>
+  <%= @jclsclass.DayMonday %>
+</p>
+
+<p>
+  <b>Daytuesday:</b>
+  <%= @jclsclass.DayTuesday %>
+</p>
+
+<p>
+  <b>Phoneprimary:</b>
+  <%= @jclsclass.PhonePrimary %>
+</p>
+
+<p>
+  <b>Nearbyfacility:</b>
+  <%= @jclsclass.NearbyFacility %>
+</p>
+
+<p>
+  <b>Locationchange:</b>
+  <%= @jclsclass.LocationChange %>
+</p>
+
+<p>
+  <b>Daythursday:</b>
+  <%= @jclsclass.DayThursday %>
+</p>
+
+
+<%= link_to 'Edit', edit_jclsclass_path(@jclsclass) %> |
+<%= link_to 'Back', jclsclasses_path %>

@@ -1,0 +1,149 @@
+<%= form_for(@facility) do |f| %>
+  <% if @facility.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@facility.errors.count, "error") %> prohibited this facility from being saved:</h2>
+
+      <ul>
+      <% @facility.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ExWeb %><br />
+    <%= f.number_field :ExWeb %>
+  </div>
+  <div class="field">
+    <%= f.label :EMail %><br />
+    <%= f.text_field :EMail %>
+  </div>
+  <div class="field">
+    <%= f.label :LocChange %><br />
+    <%= f.number_field :LocChange %>
+  </div>
+  <div class="field">
+    <%= f.label :FacilityNumber %><br />
+    <%= f.number_field :FacilityNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :Approved %><br />
+    <%= f.number_field :Approved %>
+  </div>
+  <div class="field">
+    <%= f.label :AddressLocalArea %><br />
+    <%= f.text_field :AddressLocalArea %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :EndMonth %><br />
+    <%= f.datetime_select :EndMonth %>
+  </div>
+  <div class="field">
+    <%= f.label :Deleted %><br />
+    <%= f.number_field :Deleted %>
+  </div>
+  <div class="field">
+    <%= f.label :CenterCode %><br />
+    <%= f.number_field :CenterCode %>
+  </div>
+  <div class="field">
+    <%= f.label :StartMonth %><br />
+    <%= f.datetime_select :StartMonth %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorObjectID %><br />
+    <%= f.number_field :InstructorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Highway %><br />
+    <%= f.text_field :Highway %>
+  </div>
+  <div class="field">
+    <%= f.label :Landmark %><br />
+    <%= f.text_field :Landmark %>
+  </div>
+  <div class="field">
+    <%= f.label :DistrictObjectID %><br />
+    <%= f.number_field :DistrictObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeCC %><br />
+    <%= f.number_field :AttributeCC %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeCH %><br />
+    <%= f.number_field :AttributeCH %>
+  </div>
+  <div class="field">
+    <%= f.label :PhoneFax %><br />
+    <%= f.text_field :PhoneFax %>
+  </div>
+  <div class="field">
+    <%= f.label :PhonePrimary %><br />
+    <%= f.text_field :PhonePrimary %>
+  </div>
+  <div class="field">
+    <%= f.label :Notes %><br />
+    <%= f.text_field :Notes %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeKD %><br />
+    <%= f.number_field :AttributeKD %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeMA %><br />
+    <%= f.number_field :AttributeMA %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeLK %><br />
+    <%= f.number_field :AttributeLK %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeRB %><br />
+    <%= f.number_field :AttributeRB %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeSH %><br />
+    <%= f.number_field :AttributeSH %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeWF %><br />
+    <%= f.number_field :AttributeWF %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributePT %><br />
+    <%= f.number_field :AttributePT %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeST %><br />
+    <%= f.number_field :AttributeST %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeWT %><br />
+    <%= f.number_field :AttributeWT %>
+  </div>
+  <div class="field">
+    <%= f.label :AttributeXT %><br />
+    <%= f.number_field :AttributeXT %>
+  </div>
+  <div class="field">
+    <%= f.label :PhoneSecondary %><br />
+    <%= f.text_field :PhoneSecondary %>
+  </div>
+  <div class="field">
+    <%= f.label :Directions %><br />
+    <%= f.text_field :Directions %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

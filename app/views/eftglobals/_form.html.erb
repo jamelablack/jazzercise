@@ -1,0 +1,45 @@
+<%= form_for(@eftglobal) do |f| %>
+  <% if @eftglobal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@eftglobal.errors.count, "error") %> prohibited this eftglobal from being saved:</h2>
+
+      <ul>
+      <% @eftglobal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ACHCutoffDate %><br />
+    <%= f.datetime_select :ACHCutoffDate %>
+  </div>
+  <div class="field">
+    <%= f.label :ACHDocsCutoffDate %><br />
+    <%= f.datetime_select :ACHDocsCutoffDate %>
+  </div>
+  <div class="field">
+    <%= f.label :CCCutoffDate %><br />
+    <%= f.datetime_select :CCCutoffDate %>
+  </div>
+  <div class="field">
+    <%= f.label :CCDocsCutoffDate %><br />
+    <%= f.datetime_select :CCDocsCutoffDate %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :StudentIDLengthMin %><br />
+    <%= f.number_field :StudentIDLengthMin %>
+  </div>
+  <div class="field">
+    <%= f.label :StudentIDLengthMax %><br />
+    <%= f.number_field :StudentIDLengthMax %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

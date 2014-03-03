@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  LastEvalDate: 2013-11-20 12:53:58
+  ObjectID: 1
+  InstructorObjectID: 1
+  LastEvalResult: MyString
+  CoordinatorObjectID: 1
+  Video: false
+  NextEvalDate: 2013-11-20 12:53:58
+
+two:
+  LastEvalDate: 2013-11-20 12:53:58
+  ObjectID: 1
+  InstructorObjectID: 1
+  LastEvalResult: MyString
+  CoordinatorObjectID: 1
+  Video: false
+  NextEvalDate: 2013-11-20 12:53:58

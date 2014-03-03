@@ -1,0 +1,149 @@
+<%= form_for(@jclsclass) do |f| %>
+  <% if @jclsclass.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@jclsclass.errors.count, "error") %> prohibited this jclsclass from being saved:</h2>
+
+      <ul>
+      <% @jclsclass.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :EndDate %><br />
+    <%= f.datetime_select :EndDate %>
+  </div>
+  <div class="field">
+    <%= f.label :DayWednesday %><br />
+    <%= f.check_box :DayWednesday %>
+  </div>
+  <div class="field">
+    <%= f.label :DaySaturday %><br />
+    <%= f.check_box :DaySaturday %>
+  </div>
+  <div class="field">
+    <%= f.label :ZipCodePopulation %><br />
+    <%= f.text_field :ZipCodePopulation %>
+  </div>
+  <div class="field">
+    <%= f.label :NearbyFacilityMiles %><br />
+    <%= f.text_field :NearbyFacilityMiles %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatR %><br />
+    <%= f.check_box :FormatR %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :Deleted %><br />
+    <%= f.check_box :Deleted %>
+  </div>
+  <div class="field">
+    <%= f.label :CityPopulation %><br />
+    <%= f.text_field :CityPopulation %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatCQ %><br />
+    <%= f.check_box :FormatCQ %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatBS %><br />
+    <%= f.check_box :FormatBS %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorObjectID %><br />
+    <%= f.number_field :InstructorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatCT %><br />
+    <%= f.check_box :FormatCT %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatEX %><br />
+    <%= f.check_box :FormatEX %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatJP %><br />
+    <%= f.check_box :FormatJP %>
+  </div>
+  <div class="field">
+    <%= f.label :NewClass %><br />
+    <%= f.check_box :NewClass %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatJR %><br />
+    <%= f.check_box :FormatJR %>
+  </div>
+  <div class="field">
+    <%= f.label :FacilityObjectID %><br />
+    <%= f.number_field :FacilityObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatTD %><br />
+    <%= f.check_box :FormatTD %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatSL %><br />
+    <%= f.check_box :FormatSL %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatPT %><br />
+    <%= f.check_box :FormatPT %>
+  </div>
+  <div class="field">
+    <%= f.label :FormatST %><br />
+    <%= f.check_box :FormatST %>
+  </div>
+  <div class="field">
+    <%= f.label :Misc %><br />
+    <%= f.text_field :Misc %>
+  </div>
+  <div class="field">
+    <%= f.label :X_Time_X %><br />
+    <%= f.datetime_select :X_Time_X %>
+  </div>
+  <div class="field">
+    <%= f.label :StartDate %><br />
+    <%= f.datetime_select :StartDate %>
+  </div>
+  <div class="field">
+    <%= f.label :DaySunday %><br />
+    <%= f.check_box :DaySunday %>
+  </div>
+  <div class="field">
+    <%= f.label :DayMonday %><br />
+    <%= f.check_box :DayMonday %>
+  </div>
+  <div class="field">
+    <%= f.label :DayTuesday %><br />
+    <%= f.check_box :DayTuesday %>
+  </div>
+  <div class="field">
+    <%= f.label :PhonePrimary %><br />
+    <%= f.text_field :PhonePrimary %>
+  </div>
+  <div class="field">
+    <%= f.label :NearbyFacility %><br />
+    <%= f.text_field :NearbyFacility %>
+  </div>
+  <div class="field">
+    <%= f.label :LocationChange %><br />
+    <%= f.check_box :LocationChange %>
+  </div>
+  <div class="field">
+    <%= f.label :DayThursday %><br />
+    <%= f.check_box :DayThursday %>
+  </div>
+  <div class="field">
+    <%= f.label :DayFriday %><br />
+    <%= f.check_box :DayFriday %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

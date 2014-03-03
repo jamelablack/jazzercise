@@ -1,0 +1,51 @@
+/* base.css for PROTOTYPE */
+
+/* 
+----------------------------------------------------------------------------- 
+Globals
+-----------------------------------------------------------------------------*/
+* {margin:0;padding:0;} /*zero out everything*/
+body {width:100%;font-family:Trebuchet MS, verdana, arial, sans-serif;font-size:100%;color:#444;text-align:center;}
+.clr {clear:both;font-size:1px;line-height:0;height:0;}
+h1, h2, h3, h4, h5, h6 {margin:10px;font-weight:normal;line-height:1.5;}
+h1 {font-size:32px;}
+h2 {font-size:28px;}
+h3 {font-size:22px;}
+h4 {font-size:20px;}
+h5 {font-size:18px;}
+h6 {font-size:14px;}
+p {margin:10px;font-size:12px;line-height:1.5;}
+
+.box {float:left;margin:10px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.box.full {width:880px;}
+.box.big {width:580px;}
+.box.reg {width:430px;}
+.box.med {width:280px;}
+.box.sm {width:205px;}
+
+#wrapper {margin:10px auto;padding:10px;width:900px;text-align:left;-moz-border-radius:10px;-webkit-border-radius:10px;border: 1px solid #fff;background:#fff;}
+
+/* Masthead */
+#masthead {float:left;width:900px;}
+#masthead #logo {float:left;margin:10px;font-size:38px;}
+#masthead #primary-navigation {clear:both;float:left;margin:10px;width:880px;-moz-border-radius:5px;-webkit-border-radius:5px;border:1px solid #fff;list-style:none;}
+#masthead #primary-navigation li {float:left;display:inline;}
+#masthead #primary-navigation li a {float:left;padding:10px;font-size:12px;text-transform:uppercase;}
+#masthead #meta-navigation {float:right;margin:10px;list-style:none;font-size:12px;}
+
+/* Main Content */
+#content {float:left; width:900px; min-height:400px;}
+#content form .formitem {margin:20px 10px;}
+#content form .formitem label {display:block;font-size:14px;color:black;text-transform:uppercase;}
+#content form .formitem textarea {padding:5px;font-family:Trebuchet MS, verdana, arial, sans-serif;font-size:12px;border:1px solid #999;}
+#content form .formitem input {padding:5px;border:1px solid #999;font-family:Trebuchet MS, verdana, arial, sans-serif;font-size:12px;}
+#content form .formitem.button input {padding:5px 10px;border:none;-moz-border-radius:5px;-webkit-border-radius:5px;}
+
+#content ul {margin-left:40px;}
+
+/* Footer */
+#footer {float:left;width:880px;margin:10px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#footer #secondary-navigation {clear:both;float:left;width:880px;list-style:none;}
+#footer #secondary-navigation li {float:left;display:inline;}
+#footer #secondary-navigation li a {float:left;padding:5px 10px;font-size:11px;}
+#footer p {font-size:11px;}

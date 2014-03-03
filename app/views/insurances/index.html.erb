@@ -1,0 +1,37 @@
+<h1>Listing insurances</h1>
+
+<table>
+  <tr>
+    <th>Insurancestartdate</th>
+    <th>Insrate</th>
+    <th>Objectid</th>
+    <th>Deleted</th>
+    <th>Insurancepolicynumber</th>
+    <th>Insuranceenddate</th>
+    <th>Instype</th>
+    <th>Insurancekind</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @insurances.each do |insurance| %>
+  <tr>
+    <td><%= insurance.InsuranceStartDate %></td>
+    <td><%= insurance.InsRate %></td>
+    <td><%= insurance.ObjectID %></td>
+    <td><%= insurance.Deleted %></td>
+    <td><%= insurance.InsurancePolicyNumber %></td>
+    <td><%= insurance.InsuranceEndDate %></td>
+    <td><%= insurance.InsType %></td>
+    <td><%= insurance.InsuranceKind %></td>
+    <td><%= link_to 'Show', insurance %></td>
+    <td><%= link_to 'Edit', edit_insurance_path(insurance) %></td>
+    <td><%= link_to 'Destroy', insurance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Insurance', new_insurance_path %>

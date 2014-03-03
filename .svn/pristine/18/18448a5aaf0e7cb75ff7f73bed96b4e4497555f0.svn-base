@@ -1,0 +1,44 @@
+class CreateInstructors < ActiveRecord::Migration
+  def change
+    create_table :instructors do |t|
+      t.datetime :InsuranceStartDate
+      t.integer :InsPrintCertificate
+      t.datetime :BreachDate
+      t.integer :MonitoredPass
+      t.string :PSALevel
+      t.string :PSAYear
+      t.integer :PrintNewInst
+      t.integer :Coordinator
+      t.integer :CatalogCount
+      t.integer :ObjectID
+      t.integer :MediaCount
+      t.integer :SubstituteFeePayed
+      t.datetime :MusicASCAPPaid
+      t.string :Status
+      t.datetime :InsuranceEndDate
+      t.integer :InsurancePaid
+      t.datetime :CPRExpirationDate
+      t.integer :InsuranceTypeObjectID
+      t.integer :MonAssistObjectID
+      t.integer :PrintResign
+      t.integer :Trainer
+      t.string :WorkshopGrade
+      t.string :BreachStatus
+      t.integer :SubstituteFeeBilled
+      t.string :InstructorID
+      t.datetime :DateCertified
+      t.string :WorkshopTestStatus
+      t.decimal :BreachAmount, :precision => 13, :scale => 2
+      t.string :Notes
+      t.datetime :MonitoredDate
+      t.integer :PrintTraineeLbl
+      t.integer :MonAssistVideo
+      t.integer :PersonObjectID
+      t.string :StatusReason
+      t.integer :WorkshopObjectID
+      t.string :MediaFormat
+
+      t.timestamps
+    end
+  end
+end

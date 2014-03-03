@@ -1,0 +1,65 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+
+
+<h1>Listing jfsglobals</h1>
+
+<table>
+  <tr>
+    <th>Accountingmonth</th>
+    <th>Contactemail</th>
+    <th>Contactname</th>
+    <th>Contactsubject</th>
+    <th>Franmonthmin</th>
+    <th>Mircutoffday</th>
+    <th>Mirlatefee</th>
+    <th>Objectid</th>
+    <th>Substitutefee</th>
+    <th>Weeklyfee</th>
+    <th>Restermmsg</th>
+    <th>Restermsub</th>
+    <th>Glentryno</th>
+    <th>Processes</th>
+    <th>Submirlatefee</th>
+    <th>Submircutoffday</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jfsglobals.each do |jfsglobal| %>
+  <tr>
+    <td><%= jfsglobal.AccountingMonth %></td>
+    <td><%= jfsglobal.ContactEmail %></td>
+    <td><%= jfsglobal.ContactName %></td>
+    <td><%= jfsglobal.ContactSubject %></td>
+    <td><%= jfsglobal.FranMonthMin %></td>
+    <td><%= jfsglobal.MIRCutoffDay %></td>
+    <td><%= jfsglobal.MIRLateFee %></td>
+    <td><%= jfsglobal.ObjectID %></td>
+    <td><%= jfsglobal.SubstituteFee %></td>
+    <td><%= jfsglobal.WeeklyFee %></td>
+    <td><%= jfsglobal.ResTermMsg %></td>
+    <td><%= jfsglobal.ResTermSub %></td>
+    <td><%= jfsglobal.GLEntryNo %></td>
+    <td><%= jfsglobal.ProcessES %></td>
+    <td><%= jfsglobal.SubMIRLateFee %></td>
+    <td><%= jfsglobal.SubMIRCutoffDay %></td>
+    <td><%= link_to 'Show', jfsglobal %></td>
+    <td><%= link_to 'Edit', edit_jfsglobal_path(jfsglobal) %></td>
+    <td><%= link_to 'Destroy', jfsglobal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Jfsglobal', new_jfsglobal_path %>
+
+ </div>
+  <div class="clr"></div>
+</div>

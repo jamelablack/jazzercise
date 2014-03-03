@@ -1,0 +1,87 @@
+<h1>Listing facilities</h1>
+
+<table>
+  <tr>
+    <th>Exweb</th>
+    <th>Email</th>
+    <th>Locchange</th>
+    <th>Facilitynumber</th>
+    <th>Approved</th>
+    <th>Addresslocalarea</th>
+    <th>Objectid</th>
+    <th>Endmonth</th>
+    <th>Deleted</th>
+    <th>Centercode</th>
+    <th>Startmonth</th>
+    <th>Instructorobjectid</th>
+    <th>Name</th>
+    <th>Highway</th>
+    <th>Landmark</th>
+    <th>Districtobjectid</th>
+    <th>Attributecc</th>
+    <th>Attributech</th>
+    <th>Phonefax</th>
+    <th>Phoneprimary</th>
+    <th>Notes</th>
+    <th>Attributekd</th>
+    <th>Attributema</th>
+    <th>Attributelk</th>
+    <th>Attributerb</th>
+    <th>Attributesh</th>
+    <th>Attributewf</th>
+    <th>Attributept</th>
+    <th>Attributest</th>
+    <th>Attributewt</th>
+    <th>Attributext</th>
+    <th>Phonesecondary</th>
+    <th>Directions</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @facilities.each do |facility| %>
+  <tr>
+    <td><%= facility.ExWeb %></td>
+    <td><%= facility.EMail %></td>
+    <td><%= facility.LocChange %></td>
+    <td><%= facility.FacilityNumber %></td>
+    <td><%= facility.Approved %></td>
+    <td><%= facility.AddressLocalArea %></td>
+    <td><%= facility.ObjectID %></td>
+    <td><%= facility.EndMonth %></td>
+    <td><%= facility.Deleted %></td>
+    <td><%= facility.CenterCode %></td>
+    <td><%= facility.StartMonth %></td>
+    <td><%= facility.InstructorObjectID %></td>
+    <td><%= facility.Name %></td>
+    <td><%= facility.Highway %></td>
+    <td><%= facility.Landmark %></td>
+    <td><%= facility.DistrictObjectID %></td>
+    <td><%= facility.AttributeCC %></td>
+    <td><%= facility.AttributeCH %></td>
+    <td><%= facility.PhoneFax %></td>
+    <td><%= facility.PhonePrimary %></td>
+    <td><%= facility.Notes %></td>
+    <td><%= facility.AttributeKD %></td>
+    <td><%= facility.AttributeMA %></td>
+    <td><%= facility.AttributeLK %></td>
+    <td><%= facility.AttributeRB %></td>
+    <td><%= facility.AttributeSH %></td>
+    <td><%= facility.AttributeWF %></td>
+    <td><%= facility.AttributePT %></td>
+    <td><%= facility.AttributeST %></td>
+    <td><%= facility.AttributeWT %></td>
+    <td><%= facility.AttributeXT %></td>
+    <td><%= facility.PhoneSecondary %></td>
+    <td><%= facility.Directions %></td>
+    <td><%= link_to 'Show', facility %></td>
+    <td><%= link_to 'Edit', edit_facility_path(facility) %></td>
+    <td><%= link_to 'Destroy', facility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Facility', new_facility_path %>

@@ -1,0 +1,83 @@
+class JacsGlobalsController < ApplicationController
+  # GET /jacs_globals
+  # GET /jacs_globals.json
+  def index
+    #@jacs_globals = JacsGlobal.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: GlobalsDatatable.new(view_context) }
+    end
+  end
+
+  # GET /jacs_globals/1
+  # GET /jacs_globals/1.json
+  def show
+    @jacs_global = JacsGlobal.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @jacs_global }
+    end
+  end
+
+  # GET /jacs_globals/new
+  # GET /jacs_globals/new.json
+  def new
+    @jacs_global = JacsGlobal.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @jacs_global }
+    end
+  end
+
+  # GET /jacs_globals/1/edit
+  def edit
+    @jacs_global = JacsGlobal.find(params[:id])
+  end
+
+  # POST /jacs_globals
+  # POST /jacs_globals.json
+  def create
+    @jacs_global = JacsGlobal.new(params[:jacs_global])
+
+    respond_to do |format|
+      if @jacs_global.save
+        format.html { redirect_to @jacs_global, notice: 'Jacs global was successfully created.' }
+        format.json { render json: @jacs_global, status: :created, location: @jacs_global }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @jacs_global.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /jacs_globals/1
+  # PUT /jacs_globals/1.json
+  def update
+    @jacs_global = JacsGlobal.find(params[:id])
+
+    respond_to do |format|
+      if @jacs_global.update_attributes(params[:jacs_global])
+        format.html { redirect_to @jacs_global, notice: 'Jacs global was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @jacs_global.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /jacs_globals/1
+  # DELETE /jacs_globals/1.json
+  def destroy
+    @jacs_global = JacsGlobal.find(params[:id])
+    @jacs_global.destroy
+
+    respond_to do |format|
+      format.html { redirect_to jacs_globals_url }
+      format.json { head :no_content }
+    end
+  end
+end

@@ -1,0 +1,6 @@
+<h1>Editing royaltybilling</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @royaltybilling %> |
+<%= link_to 'Back', royaltybillings_path %>

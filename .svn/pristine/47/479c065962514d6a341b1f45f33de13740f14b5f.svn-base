@@ -1,0 +1,33 @@
+<%= form_for(@jclsglobal) do |f| %>
+  <% if @jclsglobal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@jclsglobal.errors.count, "error") %> prohibited this jclsglobal from being saved:</h2>
+
+      <ul>
+      <% @jclsglobal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :FaxBodyText %><br />
+    <%= f.text_field :FaxBodyText %>
+  </div>
+  <div class="field">
+    <%= f.label :SearchRadius %><br />
+    <%= f.number_field :SearchRadius %>
+  </div>
+  <div class="field">
+    <%= f.label :FaxHeaderText %><br />
+    <%= f.text_field :FaxHeaderText %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

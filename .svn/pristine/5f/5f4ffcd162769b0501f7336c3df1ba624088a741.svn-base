@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  DistrictName: MyString
+  ObjectID: 1
+  Deleted: 1
+  CountryObjectID: 1
+  DistrictManagerObjectID: 1
+  StateObjectID: 1
+  DistrictCode: MyString
+  CommissionPct: 9.99
+
+two:
+  DistrictName: MyString
+  ObjectID: 1
+  Deleted: 1
+  CountryObjectID: 1
+  DistrictManagerObjectID: 1
+  StateObjectID: 1
+  DistrictCode: MyString
+  CommissionPct: 9.99

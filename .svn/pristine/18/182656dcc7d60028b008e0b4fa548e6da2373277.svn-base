@@ -1,0 +1,5 @@
+<h1>New qc_nexteval</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', qc_nextevals_path %>

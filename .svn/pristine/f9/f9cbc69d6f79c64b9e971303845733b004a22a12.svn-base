@@ -1,0 +1,7 @@
+class QcReport < ActiveRecord::Base
+  attr_accessible :CoordinatorObjectID, :DMObjectID, :IsApproved, :ObjectID, :PayrollPeriod, :ReportPeriod
+	self.table_name = "QcReport"
+	belongs_to :instructor, :foreign_key => "CoordinatorObjectID"
+
+
+end

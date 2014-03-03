@@ -1,0 +1,6 @@
+<h1>Editing jacs_global</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @jacs_global %> |
+<%= link_to 'Back', jacs_globals_path %>

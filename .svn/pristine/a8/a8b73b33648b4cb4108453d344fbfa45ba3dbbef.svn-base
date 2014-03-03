@@ -1,0 +1,33 @@
+<%= form_for(@royaltybilling) do |f| %>
+  <% if @royaltybilling.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@royaltybilling.errors.count, "error") %> prohibited this royaltybilling from being saved:</h2>
+
+      <ul>
+      <% @royaltybilling.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :RoyaltyBilled %><br />
+    <%= f.number_field :RoyaltyBilled %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorObjectID %><br />
+    <%= f.number_field :InstructorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :RoyaltyNameObjID %><br />
+    <%= f.number_field :RoyaltyNameObjID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

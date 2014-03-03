@@ -1,0 +1,72 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+
+
+<h1>Listing globals</h1>
+
+<table>
+  <tr>
+    <th>Achtransactionfee</th>
+    <th>Adminemail</th>
+    <th>Adminmailerfrom</th>
+    <th>Host</th>
+    <th>Organization</th>
+    <th>Username</th>
+    <th>Accountingdate</th>
+    <th>Cctransactionfee</th>
+    <th>Paymentchangefee</th>
+    <th>Dailydate</th>
+    <th>Dailyfileindex</th>
+    <th>Insufficientfundsfee</th>
+    <th>Instructorsignupfee</th>
+    <th>Macolareceive</th>
+    <th>Macolasend</th>
+    <th>Objectid</th>
+    <th>PasswordExpirationdays</th>
+    <th>Studentsignupfee</th>
+    <th>Tranhistorydate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @globals.each do |global| %>
+  <tr>
+    <td><%= global.ACHTransactionFee %></td>
+    <td><%= global.AdminEMail %></td>
+    <td><%= global.AdminMailerFrom %></td>
+    <td><%= global.Host %></td>
+    <td><%= global.Organization %></td>
+    <td><%= global.UserName %></td>
+    <td><%= global.AccountingDate %></td>
+    <td><%= global.CCTransactionFee %></td>
+    <td><%= global.PaymentChangeFee %></td>
+    <td><%= global.DailyDate %></td>
+    <td><%= global.DailyFileIndex %></td>
+    <td><%= global.InsufficientFundsFee %></td>
+    <td><%= global.InstructorSignUpFee %></td>
+    <td><%= global.MacolaReceive %></td>
+    <td><%= global.MacolaSend %></td>
+    <td><%= global.ObjectID %></td>
+    <td><%= global.Password %></td>
+    <td><%= global.ExpirationDays %></td>
+    <td><%= global.StudentSignUpFee %></td>
+    <td><%= global.TransHistoryDate %></td>
+    <td><%= link_to 'Show', global %></td>
+    <td><%= link_to 'Edit', edit_global_path(global) %></td>
+    <td><%= link_to 'Destroy', global, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Global', new_global_path %>
+
+ </div>
+  <div class="clr"></div>
+</div>

@@ -1,0 +1,113 @@
+<%= form_for(@franchise) do |f| %>
+  <% if @franchise.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@franchise.errors.count, "error") %> prohibited this franchise from being saved:</h2>
+
+      <ul>
+      <% @franchise.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Comments %><br />
+    <%= f.text_field :Comments %>
+  </div>
+  <div class="field">
+    <%= f.label :PrintLetter %><br />
+    <%= f.number_field :PrintLetter %>
+  </div>
+  <div class="field">
+    <%= f.label :FloatingSub %><br />
+    <%= f.number_field :FloatingSub %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorAccountObjectID %><br />
+    <%= f.number_field :InstructorAccountObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :FranchiseTypeAddendum %><br />
+    <%= f.text_field :FranchiseTypeAddendum %>
+  </div>
+  <div class="field">
+    <%= f.label :DateAcknowledged %><br />
+    <%= f.datetime_select :DateAcknowledged %>
+  </div>
+  <div class="field">
+    <%= f.label :BeginningRptDate %><br />
+    <%= f.datetime_select :BeginningRptDate %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorObjectID %><br />
+    <%= f.number_field :InstructorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :DateAgreementSigned %><br />
+    <%= f.datetime_select :DateAgreementSigned %>
+  </div>
+  <div class="field">
+    <%= f.label :DateTrainingMatSent %><br />
+    <%= f.datetime_select :DateTrainingMatSent %>
+  </div>
+  <div class="field">
+    <%= f.label :FranchiseType %><br />
+    <%= f.text_field :FranchiseType %>
+  </div>
+  <div class="field">
+    <%= f.label :DistrictObjectID %><br />
+    <%= f.number_field :DistrictObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :ExpirationDate %><br />
+    <%= f.datetime_select :ExpirationDate %>
+  </div>
+  <div class="field">
+    <%= f.label :CFFDate %><br />
+    <%= f.datetime_select :CFFDate %>
+  </div>
+  <div class="field">
+    <%= f.label :FeeRcvd %><br />
+    <%= f.text_field :FeeRcvd %>
+  </div>
+  <div class="field">
+    <%= f.label :FeeAmount %><br />
+    <%= f.text_field :FeeAmount %>
+  </div>
+  <div class="field">
+    <%= f.label :DateApplicationRcvd %><br />
+    <%= f.datetime_select :DateApplicationRcvd %>
+  </div>
+  <div class="field">
+    <%= f.label :DateCSPrinted %><br />
+    <%= f.datetime_select :DateCSPrinted %>
+  </div>
+  <div class="field">
+    <%= f.label :Inactive %><br />
+    <%= f.number_field :Inactive %>
+  </div>
+  <div class="field">
+    <%= f.label :DateAgreementSent %><br />
+    <%= f.number_field :DateAgreementSent %>
+  </div>
+  <div class="field">
+    <%= f.label :CFFPctCalc %><br />
+    <%= f.number_field :CFFPctCalc %>
+  </div>
+  <div class="field">
+    <%= f.label :MainFranchise %><br />
+    <%= f.number_field :MainFranchise %>
+  </div>
+  <div class="field">
+    <%= f.label :MonthlyMin %><br />
+    <%= f.text_field :MonthlyMin %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

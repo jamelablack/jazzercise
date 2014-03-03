@@ -1,0 +1,49 @@
+require 'test_helper'
+
+class JclsglobalsControllerTest < ActionController::TestCase
+  setup do
+    @jclsglobal = jclsglobals(:one)
+  end
+
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:jclsglobals)
+  end
+
+  test "should get new" do
+    get :new
+    assert_response :success
+  end
+
+  test "should create jclsglobal" do
+    assert_difference('Jclsglobal.count') do
+      post :create, jclsglobal: { FaxBodyText: @jclsglobal.FaxBodyText, FaxHeaderText: @jclsglobal.FaxHeaderText, ObjectID: @jclsglobal.ObjectID, SearchRadius: @jclsglobal.SearchRadius }
+    end
+
+    assert_redirected_to jclsglobal_path(assigns(:jclsglobal))
+  end
+
+  test "should show jclsglobal" do
+    get :show, id: @jclsglobal
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit, id: @jclsglobal
+    assert_response :success
+  end
+
+  test "should update jclsglobal" do
+    put :update, id: @jclsglobal, jclsglobal: { FaxBodyText: @jclsglobal.FaxBodyText, FaxHeaderText: @jclsglobal.FaxHeaderText, ObjectID: @jclsglobal.ObjectID, SearchRadius: @jclsglobal.SearchRadius }
+    assert_redirected_to jclsglobal_path(assigns(:jclsglobal))
+  end
+
+  test "should destroy jclsglobal" do
+    assert_difference('Jclsglobal.count', -1) do
+      delete :destroy, id: @jclsglobal
+    end
+
+    assert_redirected_to jclsglobals_path
+  end
+end

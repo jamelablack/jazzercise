@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  category: MyString
+  key_name: MyString
+  value_type: 1
+  str_value: MyString
+  int_value: 1
+  dec_value: 9.99
+  date_value: 2013-10-31 09:30:28
+  boo_value: false
+  effective_date: 2013-10-31 09:30:28
+
+two:
+  category: MyString
+  key_name: MyString
+  value_type: 1
+  str_value: MyString
+  int_value: 1
+  dec_value: 9.99
+  date_value: 2013-10-31 09:30:28
+  boo_value: false
+  effective_date: 2013-10-31 09:30:28

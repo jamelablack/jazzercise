@@ -1,0 +1,33 @@
+<%= form_for(@cff) do |f| %>
+  <% if @cff.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cff.errors.count, "error") %> prohibited this cff from being saved:</h2>
+
+      <ul>
+      <% @cff.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cffrate %><br />
+    <%= f.text_field :cffrate %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :SystemCFFObjectID %><br />
+    <%= f.number_field :SystemCFFObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :FranchiseObjectID”integer %><br />
+    <%= f.text_field :FranchiseObjectID”integer %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

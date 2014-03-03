@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ObjectID: 1
+  FaxBodyText: MyString
+  SearchRadius: 1
+  FaxHeaderText: MyString
+
+two:
+  ObjectID: 1
+  FaxBodyText: MyString
+  SearchRadius: 1
+  FaxHeaderText: MyString

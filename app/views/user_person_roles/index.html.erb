@@ -1,0 +1,27 @@
+<h1>Listing user_person_roles</h1>
+
+<table>
+  <tr>
+    <th>Roleoid</th>
+    <th>Useroidroleoid</th>
+    <th>Userpersonoid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_person_roles.each do |user_person_role| %>
+  <tr>
+    <td><%= user_person_role.RoleOID %></td>
+    <td><%= user_person_role.UserOIDRoleOID %></td>
+    <td><%= user_person_role.UserPersonOID %></td>
+    <td><%= link_to 'Show', user_person_role %></td>
+    <td><%= link_to 'Edit', edit_user_person_role_path(user_person_role) %></td>
+    <td><%= link_to 'Destroy', user_person_role, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User person role', new_user_person_role_path %>

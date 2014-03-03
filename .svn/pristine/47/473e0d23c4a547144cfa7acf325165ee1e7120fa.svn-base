@@ -1,0 +1,61 @@
+<%= form_for(@qc_global) do |f| %>
+  <% if @qc_global.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@qc_global.errors.count, "error") %> prohibited this qc_global from being saved:</h2>
+
+      <ul>
+      <% @qc_global.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :EvaluationPay %><br />
+    <%= f.text_field :EvaluationPay %>
+  </div>
+  <div class="field">
+    <%= f.label :PracticePay %><br />
+    <%= f.text_field :PracticePay %>
+  </div>
+  <div class="field">
+    <%= f.label :ScreeningPay %><br />
+    <%= f.text_field :ScreeningPay %>
+  </div>
+  <div class="field">
+    <%= f.label :HourlyPay %><br />
+    <%= f.text_field :HourlyPay %>
+  </div>
+  <div class="field">
+    <%= f.label :Mileage %><br />
+    <%= f.text_field :Mileage %>
+  </div>
+  <div class="field">
+    <%= f.label :MileageCutoff %><br />
+    <%= f.number_field :MileageCutoff %>
+  </div>
+  <div class="field">
+    <%= f.label :PayrollCutoffDay %><br />
+    <%= f.number_field :PayrollCutoffDay %>
+  </div>
+  <div class="field">
+    <%= f.label :ReportPeriod %><br />
+    <%= f.text_field :ReportPeriod %>
+  </div>
+  <div class="field">
+    <%= f.label :TravelTiers %><br />
+    <%= f.text_field :TravelTiers %>
+  </div>
+  <div class="field">
+    <%= f.label :VideoPay %><br />
+    <%= f.text_field :VideoPay %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

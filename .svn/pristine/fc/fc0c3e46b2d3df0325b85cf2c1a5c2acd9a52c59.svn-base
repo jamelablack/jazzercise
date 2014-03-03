@@ -1,0 +1,3 @@
+class QcNexteval < ActiveRecord::Base
+  attr_accessible :CoordinatorObjectID, :InstructorObjectID, :LastEvalDate, :LastEvalResult, :NextEvalDate, :ObjectID, :Video
+end

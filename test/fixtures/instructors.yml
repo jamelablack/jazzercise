@@ -1,0 +1,77 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  InsuranceStartDate: 2013-11-18 23:14:21
+  InsPrintCertificate: 1
+  BreachDate: 2013-11-18 23:14:21
+  MonitoredPass: 1
+  PSALevel: MyString
+  PSAYear: MyString
+  PrintNewInst: 1
+  Coordinator: 1
+  CatalogCount: 1
+  ObjectID: 1
+  MediaCount: 1
+  SubstituteFeePayed: 1
+  MusicASCAPPaid: 2013-11-18 23:14:21
+  Status: MyString
+  InsuranceEndDate: 2013-11-18 23:14:21
+  InsurancePaid: 1
+  CPRExpirationDate: 2013-11-18 23:14:21
+  InsuranceTypeObjectID: 1
+  MonAssistObjectID: 1
+  PrintResign: 1
+  Trainer: 1
+  WorkshopGrade: MyString
+  BreachStatus: MyString
+  SubstituteFeeBilled: 1
+  InstructorID: MyString
+  DateCertified: 2013-11-18 23:14:21
+  WorkshopTestStatus: MyString
+  BreachAmount: 9.99
+  Notes: MyString
+  MonitoredDate: 2013-11-18 23:14:21
+  PrintTraineeLbl: 1
+  MonAssistVideo: 1
+  PersonObjectID: 1
+  StatusReason: MyString
+  WorkshopObjectID: 1
+  MediaFormat: MyString
+
+two:
+  InsuranceStartDate: 2013-11-18 23:14:21
+  InsPrintCertificate: 1
+  BreachDate: 2013-11-18 23:14:21
+  MonitoredPass: 1
+  PSALevel: MyString
+  PSAYear: MyString
+  PrintNewInst: 1
+  Coordinator: 1
+  CatalogCount: 1
+  ObjectID: 1
+  MediaCount: 1
+  SubstituteFeePayed: 1
+  MusicASCAPPaid: 2013-11-18 23:14:21
+  Status: MyString
+  InsuranceEndDate: 2013-11-18 23:14:21
+  InsurancePaid: 1
+  CPRExpirationDate: 2013-11-18 23:14:21
+  InsuranceTypeObjectID: 1
+  MonAssistObjectID: 1
+  PrintResign: 1
+  Trainer: 1
+  WorkshopGrade: MyString
+  BreachStatus: MyString
+  SubstituteFeeBilled: 1
+  InstructorID: MyString
+  DateCertified: 2013-11-18 23:14:21
+  WorkshopTestStatus: MyString
+  BreachAmount: 9.99
+  Notes: MyString
+  MonitoredDate: 2013-11-18 23:14:21
+  PrintTraineeLbl: 1
+  MonAssistVideo: 1
+  PersonObjectID: 1
+  StatusReason: MyString
+  WorkshopObjectID: 1
+  MediaFormat: MyString

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lastevaldate:</b>
+  <%= @qc_nexteval.LastEvalDate %>
+</p>
+
+<p>
+  <b>Lastevaldate:</b>
+  <%= @qc_nexteval.LastEvalDate %>
+</p>
+
+<p>
+  <b>Instructorobjectid:</b>
+  <%= @qc_nexteval.InstructorObjectID %>
+</p>
+
+<p>
+  <b>Lastevalresult:</b>
+  <%= @qc_nexteval.LastEvalResult %>
+</p>
+
+<p>
+  <b>Coordinatorobjectid:</b>
+  <%= @qc_nexteval.CoordinatorObjectID %>
+</p>
+
+<p>
+  <b>Video:</b>
+  <%= @qc_nexteval.Video %>
+</p>
+
+<p>
+  <b>Nextevaldate:</b>
+  <%= @qc_nexteval.NextEvalDate %>
+</p>
+
+
+<%= link_to 'Edit', edit_qc_nexteval_path(@qc_nexteval) %> |
+<%= link_to 'Back', qc_nextevals_path %>

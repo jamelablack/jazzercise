@@ -1,0 +1,16 @@
+class CreateFacilityinstructors < ActiveRecord::Migration
+  def change
+    create_table :facilityinstructors do |t|
+      t.string :Lastname
+      t.integer :ObjectID
+      t.boolean :ShowOrder
+      t.string :PendingAction
+      t.integer :InstructorObjectID
+      t.integer :FacilityObjectID
+      t.string :FirstName
+      t.boolean :Pending
+
+      t.timestamps
+    end
+  end
+end

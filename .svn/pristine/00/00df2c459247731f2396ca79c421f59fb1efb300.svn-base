@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ObjectID: 1
+  EvaluationPay: 1.5
+  PracticePay: 1.5
+  ScreeningPay: 1.5
+  HourlyPay: 1.5
+  Mileage: 1.5
+  MileageCutoff: 1
+  PayrollCutoffDay: 1
+  ReportPeriod: MyString
+  TravelTiers: MyString
+  VideoPay: 1.5
+
+two:
+  ObjectID: 1
+  EvaluationPay: 1.5
+  PracticePay: 1.5
+  ScreeningPay: 1.5
+  HourlyPay: 1.5
+  Mileage: 1.5
+  MileageCutoff: 1
+  PayrollCutoffDay: 1
+  ReportPeriod: MyString
+  TravelTiers: MyString
+  VideoPay: 1.5

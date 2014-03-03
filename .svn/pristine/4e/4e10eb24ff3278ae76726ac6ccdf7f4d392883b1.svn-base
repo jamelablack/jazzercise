@@ -1,0 +1,3 @@
+class JacsGlobal < ActiveRecord::Base
+  attr_accessible :Category, :Datetime_Value, :Dec_Value, :Effective_Date, :Key_Name, :Str_Value
+end

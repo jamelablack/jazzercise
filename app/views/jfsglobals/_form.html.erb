@@ -1,0 +1,81 @@
+<%= form_for(@jfsglobal) do |f| %>
+  <% if @jfsglobal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@jfsglobal.errors.count, "error") %> prohibited this jfsglobal from being saved:</h2>
+
+      <ul>
+      <% @jfsglobal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :AccountingMonth %><br />
+    <%= f.datetime_select :AccountingMonth %>
+  </div>
+  <div class="field">
+    <%= f.label :ContactEmail %><br />
+    <%= f.text_field :ContactEmail %>
+  </div>
+  <div class="field">
+    <%= f.label :ContactName %><br />
+    <%= f.text_field :ContactName %>
+  </div>
+  <div class="field">
+    <%= f.label :ContactSubject %><br />
+    <%= f.text_field :ContactSubject %>
+  </div>
+  <div class="field">
+    <%= f.label :FranMonthMin %><br />
+    <%= f.text_field :FranMonthMin %>
+  </div>
+  <div class="field">
+    <%= f.label :MIRCutoffDay %><br />
+    <%= f.number_field :MIRCutoffDay %>
+  </div>
+  <div class="field">
+    <%= f.label :MIRLateFee %><br />
+    <%= f.text_field :MIRLateFee %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :SubstituteFee %><br />
+    <%= f.text_field :SubstituteFee %>
+  </div>
+  <div class="field">
+    <%= f.label :WeeklyFee %><br />
+    <%= f.text_field :WeeklyFee %>
+  </div>
+  <div class="field">
+    <%= f.label :ResTermMsg %><br />
+    <%= f.text_field :ResTermMsg %>
+  </div>
+  <div class="field">
+    <%= f.label :ResTermSub %><br />
+    <%= f.text_field :ResTermSub %>
+  </div>
+  <div class="field">
+    <%= f.label :GLEntryNo %><br />
+    <%= f.number_field :GLEntryNo %>
+  </div>
+  <div class="field">
+    <%= f.label :ProcessES %><br />
+    <%= f.check_box :ProcessES %>
+  </div>
+  <div class="field">
+    <%= f.label :SubMIRLateFee %><br />
+    <%= f.text_field :SubMIRLateFee %>
+  </div>
+  <div class="field">
+    <%= f.label :SubMIRCutoffDay %><br />
+    <%= f.number_field :SubMIRCutoffDay %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

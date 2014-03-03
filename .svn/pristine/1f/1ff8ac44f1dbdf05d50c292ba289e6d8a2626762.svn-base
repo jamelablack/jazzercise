@@ -1,0 +1,14 @@
+class CreateJacsGlobals < ActiveRecord::Migration
+  def change
+    create_table :jacs_globals do |t|
+      t.string :Category
+      t.string :Key_Name
+      t.string :Str_Value
+      t.decimal :Dec_Value
+      t.datetime :Datetime_Value
+      t.datetime :Effective_Date
+
+      t.timestamps
+    end
+  end
+end

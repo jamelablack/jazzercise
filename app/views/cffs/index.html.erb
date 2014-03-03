@@ -1,0 +1,29 @@
+<h1>Listing cffs</h1>
+
+<table>
+  <tr>
+    <th>Cffrate</th>
+    <th>Objectid</th>
+    <th>Systemcffobjectid</th>
+    <th>Franchiseobjectid”integer</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cffs.each do |cff| %>
+  <tr>
+    <td><%= cff.cffrate %></td>
+    <td><%= cff.ObjectID %></td>
+    <td><%= cff.SystemCFFObjectID %></td>
+    <td><%= cff.FranchiseObjectID”integer %></td>
+    <td><%= link_to 'Show', cff %></td>
+    <td><%= link_to 'Edit', edit_cff_path(cff) %></td>
+    <td><%= link_to 'Destroy', cff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cff', new_cff_path %>

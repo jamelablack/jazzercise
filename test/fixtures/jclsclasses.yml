@@ -1,0 +1,71 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  EndDate: 2013-11-20 12:55:15
+  DayWednesday: false
+  DaySaturday: false
+  ZipCodePopulation: MyString
+  NearbyFacilityMiles: MyString
+  FormatR: false
+  ObjectID: 1
+  Deleted: false
+  CityPopulation: MyString
+  FormatCQ: false
+  FormatBS: false
+  InstructorObjectID: 1
+  FormatCT: false
+  FormatEX: false
+  FormatJP: false
+  NewClass: false
+  FormatJR: false
+  FacilityObjectID: 1
+  FormatTD: false
+  FormatSL: false
+  FormatPT: false
+  FormatST: false
+  Misc: MyString
+  X_Time_X: 2013-11-20 12:55:15
+  StartDate: 2013-11-20 12:55:15
+  DaySunday: false
+  DayMonday: false
+  DayTuesday: false
+  PhonePrimary: MyString
+  NearbyFacility: MyString
+  LocationChange: false
+  DayThursday: false
+  DayFriday: false
+
+two:
+  EndDate: 2013-11-20 12:55:15
+  DayWednesday: false
+  DaySaturday: false
+  ZipCodePopulation: MyString
+  NearbyFacilityMiles: MyString
+  FormatR: false
+  ObjectID: 1
+  Deleted: false
+  CityPopulation: MyString
+  FormatCQ: false
+  FormatBS: false
+  InstructorObjectID: 1
+  FormatCT: false
+  FormatEX: false
+  FormatJP: false
+  NewClass: false
+  FormatJR: false
+  FacilityObjectID: 1
+  FormatTD: false
+  FormatSL: false
+  FormatPT: false
+  FormatST: false
+  Misc: MyString
+  X_Time_X: 2013-11-20 12:55:15
+  StartDate: 2013-11-20 12:55:15
+  DaySunday: false
+  DayMonday: false
+  DayTuesday: false
+  PhonePrimary: MyString
+  NearbyFacility: MyString
+  LocationChange: false
+  DayThursday: false
+  DayFriday: false

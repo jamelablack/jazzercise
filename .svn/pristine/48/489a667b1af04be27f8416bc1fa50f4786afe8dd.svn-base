@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @address.ObjectID %>
+</p>
+
+<p>
+  <b>Associatedobjectid:</b>
+  <%= @address.AssociatedObjectID %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @address.City %>
+</p>
+
+<p>
+  <b>Addresstype:</b>
+  <%= @address.AddressType %>
+</p>
+
+<p>
+  <b>Countryobjectid:</b>
+  <%= @address.CountryObjectID %>
+</p>
+
+<p>
+  <b>Stateobjectid:</b>
+  <%= @address.StateObjectID %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @address.ZipCode %>
+</p>
+
+<p>
+  <b>Associatedtype:</b>
+  <%= @address.AssociatedType %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%= @address.Address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @address.Address2 %>
+</p>
+
+<p>
+  <b>Address3:</b>
+  <%= @address.Address3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>

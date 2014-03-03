@@ -1,0 +1,29 @@
+<h1>Listing royaltybillings</h1>
+
+<table>
+  <tr>
+    <th>Objectid</th>
+    <th>Royaltybilled</th>
+    <th>Instructorobjectid</th>
+    <th>Royaltynameobjid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @royaltybillings.each do |royaltybilling| %>
+  <tr>
+    <td><%= royaltybilling.ObjectID %></td>
+    <td><%= royaltybilling.RoyaltyBilled %></td>
+    <td><%= royaltybilling.InstructorObjectID %></td>
+    <td><%= royaltybilling.RoyaltyNameObjID %></td>
+    <td><%= link_to 'Show', royaltybilling %></td>
+    <td><%= link_to 'Edit', edit_royaltybilling_path(royaltybilling) %></td>
+    <td><%= link_to 'Destroy', royaltybilling, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Royaltybilling', new_royaltybilling_path %>

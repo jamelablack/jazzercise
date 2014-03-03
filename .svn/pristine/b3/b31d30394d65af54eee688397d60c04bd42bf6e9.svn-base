@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  BirthDate: MyString
+  EMail: MyString
+  FirstName: MyString
+  FullName: MyString
+  Gender: MyString
+  LastName: MyString
+  ObjectID: 1
+  PhonePrimary: MyString
+  PhoneSecondary: MyString
+  SSN: MyString
+  UserPersonObjectID: 1
+  SendSpecials: false
+  SendCatalog: false
+  SendToOthers: false
+  SendNews: false
+
+two:
+  BirthDate: MyString
+  EMail: MyString
+  FirstName: MyString
+  FullName: MyString
+  Gender: MyString
+  LastName: MyString
+  ObjectID: 1
+  PhonePrimary: MyString
+  PhoneSecondary: MyString
+  SSN: MyString
+  UserPersonObjectID: 1
+  SendSpecials: false
+  SendCatalog: false
+  SendToOthers: false
+  SendNews: false

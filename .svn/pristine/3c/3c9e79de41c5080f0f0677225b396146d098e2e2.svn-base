@@ -1,0 +1,16 @@
+class CreateInstructoraccounts < ActiveRecord::Migration
+  def change
+    create_table :instructoraccounts do |t|
+      t.integer :ObjectID
+      t.string :Status
+      t.integer :InstructorObjectID
+      t.integer :FacilityObjectID
+      t.string :Name
+      t.integer :FranchiseObjectID
+      t.integer :NewInstructor
+      t.integer :JBSAccountObjectID
+
+      t.timestamps
+    end
+  end
+end

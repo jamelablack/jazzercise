@@ -1,0 +1,6 @@
+class Cff < ActiveRecord::Base
+  attr_accessible :FranchiseObjectID”integer, :ObjectID, :SystemCFFObjectID, :cffrate
+   self.table_name = "Cff"
+   belongs_to :franchise, :foreign_key => "FranchiseObjectID"
+
+end

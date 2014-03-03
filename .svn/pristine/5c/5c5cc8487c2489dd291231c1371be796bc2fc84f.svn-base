@@ -1,0 +1,83 @@
+class JclsglobalsController < ApplicationController
+  # GET /jclsglobals
+  # GET /jclsglobals.json
+  def index
+    @jclsglobals = Jclsglobal.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @jclsglobals }
+    end
+  end
+
+  # GET /jclsglobals/1
+  # GET /jclsglobals/1.json
+  def show
+    @jclsglobal = Jclsglobal.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @jclsglobal }
+    end
+  end
+
+  # GET /jclsglobals/new
+  # GET /jclsglobals/new.json
+  def new
+    @jclsglobal = Jclsglobal.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @jclsglobal }
+    end
+  end
+
+  # GET /jclsglobals/1/edit
+  def edit
+    @jclsglobal = Jclsglobal.find(params[:id])
+  end
+
+  # POST /jclsglobals
+  # POST /jclsglobals.json
+  def create
+    @jclsglobal = Jclsglobal.new(params[:jclsglobal])
+
+    respond_to do |format|
+      if @jclsglobal.save
+        format.html { redirect_to @jclsglobal, notice: 'Jclsglobal was successfully created.' }
+        format.json { render json: @jclsglobal, status: :created, location: @jclsglobal }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @jclsglobal.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /jclsglobals/1
+  # PUT /jclsglobals/1.json
+  def update
+    @jclsglobal = Jclsglobal.find(params[:id])
+
+    respond_to do |format|
+      if @jclsglobal.update_attributes(params[:jclsglobal])
+        format.html { redirect_to @jclsglobal, notice: 'Jclsglobal was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @jclsglobal.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /jclsglobals/1
+  # DELETE /jclsglobals/1.json
+  def destroy
+    @jclsglobal = Jclsglobal.find(params[:id])
+    @jclsglobal.destroy
+
+    respond_to do |format|
+      format.html { redirect_to jclsglobals_url }
+      format.json { head :no_content }
+    end
+  end
+end

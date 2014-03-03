@@ -1,0 +1,5 @@
+<h1>New jclsclass</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', jclsclasses_path %>

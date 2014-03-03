@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cffrate: 9.99
+  ObjectID: 1
+  SystemCFFObjectID: 1
+  FranchiseObjectID”integer: MyString
+
+two:
+  cffrate: 9.99
+  ObjectID: 1
+  SystemCFFObjectID: 1
+  FranchiseObjectID”integer: MyString

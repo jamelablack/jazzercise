@@ -1,0 +1,41 @@
+<%= form_for(@qc_report) do |f| %>
+  <% if @qc_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@qc_report.errors.count, "error") %> prohibited this qc_report from being saved:</h2>
+
+      <ul>
+      <% @qc_report.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :ReportPeriod %><br />
+    <%= f.datetime_select :ReportPeriod %>
+  </div>
+  <div class="field">
+    <%= f.label :PayrollPeriod %><br />
+    <%= f.datetime_select :PayrollPeriod %>
+  </div>
+  <div class="field">
+    <%= f.label :CoordinatorObjectID %><br />
+    <%= f.number_field :CoordinatorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :IsApproved %><br />
+    <%= f.number_field :IsApproved %>
+  </div>
+  <div class="field">
+    <%= f.label :DMObjectID %><br />
+    <%= f.number_field :DMObjectID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

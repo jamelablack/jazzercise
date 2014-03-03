@@ -1,0 +1,19 @@
+class CreateAddresses < ActiveRecord::Migration
+  def change
+    create_table :addresses do |t|
+      t.integer :ObjectID
+      t.integer :AssociatedObjectID
+      t.string :City
+      t.string :AddressType
+      t.integer :CountryObjectID
+      t.integer :StateObjectID
+      t.string :ZipCode
+      t.string :AssociatedType
+      t.string :Address1
+      t.string :Address2
+      t.string :Address3
+
+      t.timestamps
+    end
+  end
+end

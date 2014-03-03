@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ObjectID: 1
+  ReportPeriod: 2013-11-18 23:20:33
+  PayrollPeriod: 2013-11-18 23:20:33
+  CoordinatorObjectID: 1
+  IsApproved: 1
+  DMObjectID: 1
+
+two:
+  ObjectID: 1
+  ReportPeriod: 2013-11-18 23:20:33
+  PayrollPeriod: 2013-11-18 23:20:33
+  CoordinatorObjectID: 1
+  IsApproved: 1
+  DMObjectID: 1

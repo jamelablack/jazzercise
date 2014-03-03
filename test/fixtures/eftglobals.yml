@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ACHCutoffDate: 2013-10-21 06:45:23
+  ACHDocsCutoffDate: 2013-10-21 06:45:23
+  CCCutoffDate: 2013-10-21 06:45:23
+  CCDocsCutoffDate: 2013-10-21 06:45:23
+  ObjectID: 1
+  StudentIDLengthMin: 1
+  StudentIDLengthMax: 1
+
+two:
+  ACHCutoffDate: 2013-10-21 06:45:23
+  ACHDocsCutoffDate: 2013-10-21 06:45:23
+  CCCutoffDate: 2013-10-21 06:45:23
+  CCDocsCutoffDate: 2013-10-21 06:45:23
+  ObjectID: 1
+  StudentIDLengthMin: 1
+  StudentIDLengthMax: 1

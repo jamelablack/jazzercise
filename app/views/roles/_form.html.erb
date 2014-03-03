@@ -1,0 +1,45 @@
+<%= form_for(@role) do |f| %>
+  <% if @role.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@role.errors.count, "error") %> prohibited this role from being saved:</h2>
+
+      <ul>
+      <% @role.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="formitem">
+    <%= f.label :AutomaticRole %><br />
+    <%= f.text_field :AutomaticRole %>
+  </div>
+  <div class="formitem">
+    <%= f.label :ApplicationName %><br />
+    <%= f.text_field :ApplicationName %>
+  </div>
+  <div class="formitem">
+    <%= f.label :ButtonText %><br />
+    <%= f.text_field :ButtonText %>
+  </div>
+  <div class="formitem">
+    <%= f.label :PlainText %><br />
+    <%= f.text_field :PlainText %>
+  </div>
+  <div class="formitem">
+    <%= f.label :TemplateName %><br />
+    <%= f.text_field :TemplateName %>
+  </div>
+  <div class="formitem">
+    <%= f.label :TimeOut %><br />
+    <%= f.number_field :TimeOut %>
+  </div>
+  <div class="formitem">
+    <%= f.label :LockOut %><br />
+    <%= f.text_field :LockOut %>
+  </div>
+  <div class="formitem button">
+    <%= f.submit %>
+  </div>
+<% end %>

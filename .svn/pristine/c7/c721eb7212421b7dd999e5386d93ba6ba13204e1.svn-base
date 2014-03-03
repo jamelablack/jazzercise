@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @facilityinstructor.Lastname %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @facilityinstructor.ObjectID %>
+</p>
+
+<p>
+  <b>Showorder:</b>
+  <%= @facilityinstructor.ShowOrder %>
+</p>
+
+<p>
+  <b>Pendingaction:</b>
+  <%= @facilityinstructor.PendingAction %>
+</p>
+
+<p>
+  <b>Instructorobjectid:</b>
+  <%= @facilityinstructor.InstructorObjectID %>
+</p>
+
+<p>
+  <b>Facilityobjectid:</b>
+  <%= @facilityinstructor.FacilityObjectID %>
+</p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @facilityinstructor.FirstName %>
+</p>
+
+<p>
+  <b>Pending:</b>
+  <%= @facilityinstructor.Pending %>
+</p>
+
+
+<%= link_to 'Edit', edit_facilityinstructor_path(@facilityinstructor) %> |
+<%= link_to 'Back', facilityinstructors_path %>

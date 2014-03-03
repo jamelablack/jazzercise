@@ -1,0 +1,41 @@
+<%= form_for(@jacs_global) do |f| %>
+  <% if @jacs_global.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@jacs_global.errors.count, "error") %> prohibited this jacs_global from being saved:</h2>
+
+      <ul>
+      <% @jacs_global.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Category %><br />
+    <%= f.text_field :Category %>
+  </div>
+  <div class="field">
+    <%= f.label :Key_Name %><br />
+    <%= f.text_field :Key_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Str_Value %><br />
+    <%= f.text_field :Str_Value %>
+  </div>
+  <div class="field">
+    <%= f.label :Dec_Value %><br />
+    <%= f.text_field :Dec_Value %>
+  </div>
+  <div class="field">
+    <%= f.label :Datetime_Value %><br />
+    <%= f.datetime_select :Datetime_Value %>
+  </div>
+  <div class="field">
+    <%= f.label :Effective_Date %><br />
+    <%= f.datetime_select :Effective_Date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

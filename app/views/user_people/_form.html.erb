@@ -1,0 +1,61 @@
+<%= form_for(@user_person) do |f| %>
+  <% if @user_person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_person.errors.count, "error") %> prohibited this user_person from being saved:</h2>
+
+      <ul>
+      <% @user_person.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="formitem checkbox">
+	<%= f.check_box :AllowLogon %>
+    <%= f.label :AllowLogon %>    
+  </div>
+  <div class="formitem checkbox">
+    <%= f.check_box :AutoLockout %>
+    <%= f.label :AutoLockout %>
+  </div>
+    <div class="formitem">
+    <%= f.label :DeletedUserIDKey %><br />
+    <%= f.text_field :DeletedUserIDKey %>
+  </div>
+  <div class="formitem">
+    <%= f.label :DeletedAutoLockoutKey %><br />
+    <%= f.text_field :DeletedAutoLockoutKey %>
+  </div>
+  <div class="formitem checkbox">
+    <%= f.check_box :Deleted %>
+    <%= f.label :Deleted %>
+  </div>
+  <div class="formitem">
+    <%= f.label :DeletedAllowLogonKey %><br />
+    <%= f.text_field :DeletedAllowLogonKey %>
+  </div>
+  <div class="formitem checkbox">
+    <%= f.check_box :PWForceChange %>
+    <%= f.label :PWForceChange %>
+  </div>
+  <div class="formitem">
+    <%= f.label :PWHelpAnswer %><br />
+    <%= f.text_field :PWHelpAnswer %>
+  </div>
+  <div class="formitem">
+    <%= f.label :EncUserID %><br />
+    <%= f.text_field :EncUserID %>
+  </div>
+
+
+	<% Role.all.each do |role| %>
+<label class="li"><%= check_box_tag :role_ids, role.id, @user_person.roles.include?(role), :name => 'user_person[role_ids][]' %> <u><%= role.PlainText %></u></label><br />
+<% end %>
+
+ 
+
+  <div class="formitem button">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,55 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+
+<h1>Listing qc_globals</h1>
+
+<table>
+  <tr>
+    <th>Objectid</th>
+    <th>Evaluationpay</th>
+    <th>Practicepay</th>
+    <th>Screeningpay</th>
+    <th>Hourlypay</th>
+    <th>Mileage</th>
+    <th>Mileagecutoff</th>
+    <th>Payrollcutoffday</th>
+    <th>Reportperiod</th>
+    <th>Traveltiers</th>
+    <th>Videopay</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qc_globals.each do |qc_global| %>
+  <tr>
+    <td><%= qc_global.ObjectID %></td>
+    <td><%= qc_global.EvaluationPay %></td>
+    <td><%= qc_global.PracticePay %></td>
+    <td><%= qc_global.ScreeningPay %></td>
+    <td><%= qc_global.HourlyPay %></td>
+    <td><%= qc_global.Mileage %></td>
+    <td><%= qc_global.MileageCutoff %></td>
+    <td><%= qc_global.PayrollCutoffDay %></td>
+    <td><%= qc_global.ReportPeriod %></td>
+    <td><%= qc_global.TravelTiers %></td>
+    <td><%= qc_global.VideoPay %></td>
+    <td><%= link_to 'Show', qc_global %></td>
+    <td><%= link_to 'Edit', edit_qc_global_path(qc_global) %></td>
+    <td><%= link_to 'Destroy', qc_global, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Qc global', new_qc_global_path %>
+
+ </div>
+  <div class="clr"></div>
+</div>
+

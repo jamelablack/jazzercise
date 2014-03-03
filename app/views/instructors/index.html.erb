@@ -1,0 +1,93 @@
+<h1>Listing instructors</h1>
+
+<table>
+  <tr>
+    <th>Insurancestartdate</th>
+    <th>Insprintcertificate</th>
+    <th>Breachdate</th>
+    <th>Monitoredpass</th>
+    <th>Psalevel</th>
+    <th>Psayear</th>
+    <th>Printnewinst</th>
+    <th>Coordinator</th>
+    <th>Catalogcount</th>
+    <th>Objectid</th>
+    <th>Mediacount</th>
+    <th>Substitutefeepayed</th>
+    <th>Musicascappaid</th>
+    <th>Status</th>
+    <th>Insuranceenddate</th>
+    <th>Insurancepaid</th>
+    <th>Cprexpirationdate</th>
+    <th>Insurancetypeobjectid</th>
+    <th>Monassistobjectid</th>
+    <th>Printresign</th>
+    <th>Trainer</th>
+    <th>Workshopgrade</th>
+    <th>Breachstatus</th>
+    <th>Substitutefeebilled</th>
+    <th>Instructorid</th>
+    <th>Datecertified</th>
+    <th>Workshopteststatus</th>
+    <th>Breachamount</th>
+    <th>Notes</th>
+    <th>Monitoreddate</th>
+    <th>Printtraineelbl</th>
+    <th>Monassistvideo</th>
+    <th>Personobjectid</th>
+    <th>Statusreason</th>
+    <th>Workshopobjectid</th>
+    <th>Mediaformat</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @instructors.each do |instructor| %>
+  <tr>
+    <td><%= instructor.InsuranceStartDate %></td>
+    <td><%= instructor.InsPrintCertificate %></td>
+    <td><%= instructor.BreachDate %></td>
+    <td><%= instructor.MonitoredPass %></td>
+    <td><%= instructor.PSALevel %></td>
+    <td><%= instructor.PSAYear %></td>
+    <td><%= instructor.PrintNewInst %></td>
+    <td><%= instructor.Coordinator %></td>
+    <td><%= instructor.CatalogCount %></td>
+    <td><%= instructor.ObjectID %></td>
+    <td><%= instructor.MediaCount %></td>
+    <td><%= instructor.SubstituteFeePayed %></td>
+    <td><%= instructor.MusicASCAPPaid %></td>
+    <td><%= instructor.Status %></td>
+    <td><%= instructor.InsuranceEndDate %></td>
+    <td><%= instructor.InsurancePaid %></td>
+    <td><%= instructor.CPRExpirationDate %></td>
+    <td><%= instructor.InsuranceTypeObjectID %></td>
+    <td><%= instructor.MonAssistObjectID %></td>
+    <td><%= instructor.PrintResign %></td>
+    <td><%= instructor.Trainer %></td>
+    <td><%= instructor.WorkshopGrade %></td>
+    <td><%= instructor.BreachStatus %></td>
+    <td><%= instructor.SubstituteFeeBilled %></td>
+    <td><%= instructor.InstructorID %></td>
+    <td><%= instructor.DateCertified %></td>
+    <td><%= instructor.WorkshopTestStatus %></td>
+    <td><%= instructor.BreachAmount %></td>
+    <td><%= instructor.Notes %></td>
+    <td><%= instructor.MonitoredDate %></td>
+    <td><%= instructor.PrintTraineeLbl %></td>
+    <td><%= instructor.MonAssistVideo %></td>
+    <td><%= instructor.PersonObjectID %></td>
+    <td><%= instructor.StatusReason %></td>
+    <td><%= instructor.WorkshopObjectID %></td>
+    <td><%= instructor.MediaFormat %></td>
+    <td><%= link_to 'Show', instructor %></td>
+    <td><%= link_to 'Edit', edit_instructor_path(instructor) %></td>
+    <td><%= link_to 'Destroy', instructor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Instructor', new_instructor_path %>

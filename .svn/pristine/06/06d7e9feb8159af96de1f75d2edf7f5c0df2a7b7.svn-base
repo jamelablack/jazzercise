@@ -1,0 +1,170 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Exweb:</b>
+  <%= @facility.ExWeb %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @facility.EMail %>
+</p>
+
+<p>
+  <b>Locchange:</b>
+  <%= @facility.LocChange %>
+</p>
+
+<p>
+  <b>Facilitynumber:</b>
+  <%= @facility.FacilityNumber %>
+</p>
+
+<p>
+  <b>Approved:</b>
+  <%= @facility.Approved %>
+</p>
+
+<p>
+  <b>Addresslocalarea:</b>
+  <%= @facility.AddressLocalArea %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @facility.ObjectID %>
+</p>
+
+<p>
+  <b>Endmonth:</b>
+  <%= @facility.EndMonth %>
+</p>
+
+<p>
+  <b>Deleted:</b>
+  <%= @facility.Deleted %>
+</p>
+
+<p>
+  <b>Centercode:</b>
+  <%= @facility.CenterCode %>
+</p>
+
+<p>
+  <b>Startmonth:</b>
+  <%= @facility.StartMonth %>
+</p>
+
+<p>
+  <b>Instructorobjectid:</b>
+  <%= @facility.InstructorObjectID %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @facility.Name %>
+</p>
+
+<p>
+  <b>Highway:</b>
+  <%= @facility.Highway %>
+</p>
+
+<p>
+  <b>Landmark:</b>
+  <%= @facility.Landmark %>
+</p>
+
+<p>
+  <b>Districtobjectid:</b>
+  <%= @facility.DistrictObjectID %>
+</p>
+
+<p>
+  <b>Attributecc:</b>
+  <%= @facility.AttributeCC %>
+</p>
+
+<p>
+  <b>Attributech:</b>
+  <%= @facility.AttributeCH %>
+</p>
+
+<p>
+  <b>Phonefax:</b>
+  <%= @facility.PhoneFax %>
+</p>
+
+<p>
+  <b>Phoneprimary:</b>
+  <%= @facility.PhonePrimary %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @facility.Notes %>
+</p>
+
+<p>
+  <b>Attributekd:</b>
+  <%= @facility.AttributeKD %>
+</p>
+
+<p>
+  <b>Attributema:</b>
+  <%= @facility.AttributeMA %>
+</p>
+
+<p>
+  <b>Attributelk:</b>
+  <%= @facility.AttributeLK %>
+</p>
+
+<p>
+  <b>Attributerb:</b>
+  <%= @facility.AttributeRB %>
+</p>
+
+<p>
+  <b>Attributesh:</b>
+  <%= @facility.AttributeSH %>
+</p>
+
+<p>
+  <b>Attributewf:</b>
+  <%= @facility.AttributeWF %>
+</p>
+
+<p>
+  <b>Attributept:</b>
+  <%= @facility.AttributePT %>
+</p>
+
+<p>
+  <b>Attributest:</b>
+  <%= @facility.AttributeST %>
+</p>
+
+<p>
+  <b>Attributewt:</b>
+  <%= @facility.AttributeWT %>
+</p>
+
+<p>
+  <b>Attributext:</b>
+  <%= @facility.AttributeXT %>
+</p>
+
+<p>
+  <b>Phonesecondary:</b>
+  <%= @facility.PhoneSecondary %>
+</p>
+
+<p>
+  <b>Directions:</b>
+  <%= @facility.Directions %>
+</p>
+
+
+<%= link_to 'Edit', edit_facility_path(@facility) %> |
+<%= link_to 'Back', facilities_path %>

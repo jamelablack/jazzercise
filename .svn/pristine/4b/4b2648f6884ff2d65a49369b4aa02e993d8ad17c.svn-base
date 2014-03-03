@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ObjectID: 1
+  RoyaltyBilled: 1
+  InstructorObjectID: 1
+  RoyaltyNameObjID: 1
+
+two:
+  ObjectID: 1
+  RoyaltyBilled: 1
+  InstructorObjectID: 1
+  RoyaltyNameObjID: 1

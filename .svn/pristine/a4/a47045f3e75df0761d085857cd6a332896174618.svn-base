@@ -1,0 +1,16 @@
+class CreateQcNextevals < ActiveRecord::Migration
+  def change
+    create_table :qc_nextevals do |t|
+      t.datetime :LastEvalDate
+      t.integer :LastEvalDate
+      t.integer :InstructorObjectID
+      t.string :LastEvalResult
+      t.integer :CoordinatorObjectID
+      t.boolean :Video
+      t.datetime :NextEvalDate
+      t.integer :ObjectID
+
+      t.timestamps
+    end
+  end
+end

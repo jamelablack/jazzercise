@@ -1,0 +1,28 @@
+class PopulateGobals < ActiveRecord::Migration
+  def up
+
+
+# get all keys form globals table
+
+global = Global.first
+
+
+category = "GLOBALS"
+ignore_list = ["id", "created_at", "updated_at", "ObjectID"]
+
+global.attributes.keys.each do |key|
+if !ignore_list.include?(key)
+		puts "key is #{key}" 
+        data_type = global.attributes[key].class
+        g_global = AllGlobal.new
+        g_global.category = category
+        g_global.key_name = key
+        g_global.save
+end
+end # do
+
+end
+
+  def down
+  end
+end

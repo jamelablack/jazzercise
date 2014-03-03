@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Roleoid:</b>
+  <%= @user_person_role.RoleOID %>
+</p>
+
+<p>
+  <b>Useroidroleoid:</b>
+  <%= @user_person_role.UserOIDRoleOID %>
+</p>
+
+<p>
+  <b>Userpersonoid:</b>
+  <%= @user_person_role.UserPersonOID %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_person_role_path(@user_person_role) %> |
+<%= link_to 'Back', user_person_roles_path %>

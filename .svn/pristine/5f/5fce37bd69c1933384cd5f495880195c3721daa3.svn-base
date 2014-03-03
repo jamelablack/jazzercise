@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  AllowLogon: false
+  AutoLockout: false
+  X_DateTime_X: MyString
+  DeletedUserIDKey: MyString
+  DeletedAutoLockoutKey: MyString
+  Deleted: false
+  DeletedAllowLogonKey: MyString
+  ObjectID: 1
+  X_Password_X: MyString
+  PWForceChange: false
+  PWHelpAnswer: MyString
+  EncUserID: MyString
+
+two:
+  AllowLogon: false
+  AutoLockout: false
+  X_DateTime_X: MyString
+  DeletedUserIDKey: MyString
+  DeletedAutoLockoutKey: MyString
+  Deleted: false
+  DeletedAllowLogonKey: MyString
+  ObjectID: 1
+  X_Password_X: MyString
+  PWForceChange: false
+  PWHelpAnswer: MyString
+  EncUserID: MyString

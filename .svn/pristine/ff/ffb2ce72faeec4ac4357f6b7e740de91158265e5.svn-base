@@ -1,0 +1,12 @@
+class CreateCffs < ActiveRecord::Migration
+  def change
+    create_table :cffs do |t|
+      t.decimal :cffrate, :precision => 15, :scale => 7
+      t.integer :ObjectID
+      t.integer :SystemCFFObjectID
+      t.integer :FranchiseObjectID
+
+      t.timestamps
+    end
+  end
+end

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Insurancestartdate:</b>
+  <%= @insurance.InsuranceStartDate %>
+</p>
+
+<p>
+  <b>Insrate:</b>
+  <%= @insurance.InsRate %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @insurance.ObjectID %>
+</p>
+
+<p>
+  <b>Deleted:</b>
+  <%= @insurance.Deleted %>
+</p>
+
+<p>
+  <b>Insurancepolicynumber:</b>
+  <%= @insurance.InsurancePolicyNumber %>
+</p>
+
+<p>
+  <b>Insuranceenddate:</b>
+  <%= @insurance.InsuranceEndDate %>
+</p>
+
+<p>
+  <b>Instype:</b>
+  <%= @insurance.InsType %>
+</p>
+
+<p>
+  <b>Insurancekind:</b>
+  <%= @insurance.InsuranceKind %>
+</p>
+
+
+<%= link_to 'Edit', edit_insurance_path(@insurance) %> |
+<%= link_to 'Back', insurances_path %>

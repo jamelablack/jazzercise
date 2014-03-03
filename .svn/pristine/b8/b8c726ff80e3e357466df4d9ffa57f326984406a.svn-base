@@ -1,0 +1,16 @@
+class CreateDistricts < ActiveRecord::Migration
+  def change
+    create_table :districts do |t|
+      t.string :DistrictName
+      t.integer :ObjectID
+      t.integer :Deleted
+      t.integer :CountryObjectID
+      t.integer :DistrictManagerObjectID
+      t.integer :StateObjectID
+      t.string :DistrictCode
+      t.decimal :CommissionPct, :precision => 15, :scale => 7
+
+      t.timestamps
+    end
+  end
+end

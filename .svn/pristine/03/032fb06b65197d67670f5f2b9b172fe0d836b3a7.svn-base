@@ -1,0 +1,382 @@
+# encoding: UTF-8
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.rb definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using db:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended to check this file into your version control system.
+
+ActiveRecord::Schema.define(:version => 20131119043824) do
+
+  create_table "Person", :primary_key => "ObjectID", :force => true do |t|
+    t.datetime "BirthDate"
+    t.string   "EMail"
+    t.string   "FirstName"
+    t.string   "FullName"
+    t.string   "Gender"
+    t.string   "LastName"
+    t.string   "PhonePrimary"
+    t.string   "PhoneFax"
+    t.string   "NickName"
+    t.string   "PhoneSecondary"
+    t.string   "SSN"
+    t.integer  "UserPersonObjectID"
+    t.boolean  "SendSpecials"
+    t.boolean  "SendCatalog"
+    t.boolean  "SendToOthers"
+    t.boolean  "SendNews"
+  end
+
+  add_index "person", ["FirstName", "LastName"], :name => "Person_firstname_lastname_index"
+
+  create_table "UserPerson", :primary_key => "ObjectID", :force => true do |t|
+    t.boolean  "AllowLogon"
+    t.boolean  "AutoLockout"
+    t.datetime "UPDateTime"
+    t.string   "DeletedUserIDKey"
+    t.string   "DeletedAutoLockoutKey"
+    t.boolean  "Deleted"
+    t.string   "DeletedAllowLogonKey"
+    t.string   "Password"
+    t.string   "UserID"
+    t.boolean  "PWForceChange"
+    t.string   "PWHelpQuestion"
+    t.string   "PWHelpAnswer"
+    t.string   "EncUserID"
+  end
+
+  create_table "UserPersonRole", :force => true do |t|
+    t.integer "RoleOID"
+    t.integer "UserPersonOID"
+  end
+
+  create_table "addresses", :force => true do |t|
+    t.integer  "ObjectID"
+    t.integer  "AssociatedObjectID"
+    t.string   "City"
+    t.string   "AddressType"
+    t.integer  "CountryObjectID"
+    t.integer  "StateObjectID"
+    t.string   "ZipCode"
+    t.string   "AssociatedType"
+    t.string   "Address1"
+    t.string   "Address2"
+    t.string   "Address3"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "all_globals", :force => true do |t|
+    t.string   "category"
+    t.string   "key_name"
+    t.integer  "value_type"
+    t.string   "str_value"
+    t.integer  "int_value"
+    t.decimal  "dec_value",      :precision => 13, :scale => 3
+    t.datetime "date_value"
+    t.boolean  "boo_value"
+    t.datetime "effective_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cffs", :force => true do |t|
+    t.decimal  "cffrate",           :precision => 15, :scale => 7
+    t.integer  "ObjectID"
+    t.integer  "SystemCFFObjectID"
+    t.integer  "FranchiseObjectID"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "districts", :force => true do |t|
+    t.string   "DistrictName"
+    t.integer  "ObjectID"
+    t.integer  "Deleted"
+    t.integer  "CountryObjectID"
+    t.integer  "DistrictManagerObjectID"
+    t.integer  "StateObjectID"
+    t.string   "DistrictCode"
+    t.decimal  "CommissionPct",           :precision => 15, :scale => 7
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "eftglobals", :force => true do |t|
+    t.datetime "ACHCutoffDate"
+    t.datetime "ACHDocsCutoffDate"
+    t.datetime "CCCutoffDate"
+    t.datetime "CCDocsCutoffDate"
+    t.integer  "ObjectID"
+    t.integer  "StudentIDLengthMin"
+    t.integer  "StudentIDLengthMax"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "facilities", :force => true do |t|
+    t.integer  "ExWeb"
+    t.string   "EMail"
+    t.integer  "LocChange"
+    t.integer  "FacilityNumber"
+    t.integer  "Approved"
+    t.string   "AddressLocalArea"
+    t.integer  "ObjectID"
+    t.datetime "EndMonth"
+    t.integer  "Deleted"
+    t.integer  "CenterCode"
+    t.datetime "StartMonth"
+    t.integer  "InstructorObjectID"
+    t.string   "Name"
+    t.string   "Highway"
+    t.string   "Landmark"
+    t.integer  "DistrictObjectID"
+    t.integer  "AttributeCC"
+    t.integer  "AttributeCH"
+    t.string   "PhoneFax"
+    t.string   "PhonePrimary"
+    t.string   "Notes"
+    t.integer  "AttributeKD"
+    t.integer  "AttributeMA"
+    t.integer  "AttributeLK"
+    t.integer  "AttributeRB"
+    t.integer  "AttributeSH"
+    t.integer  "AttributeWF"
+    t.integer  "AttributePT"
+    t.integer  "AttributeST"
+    t.integer  "AttributeWT"
+    t.integer  "AttributeXT"
+    t.string   "PhoneSecondary"
+    t.string   "Directions"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "facilityinstructors", :force => true do |t|
+    t.string   "Lastname"
+    t.integer  "ObjectID"
+    t.integer  "ShowOrder"
+    t.string   "PendingAction"
+    t.integer  "InstructorObjectID"
+    t.integer  "FacilityObjectID"
+    t.string   "FirstName"
+    t.integer  "Pending"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "franchises", :force => true do |t|
+    t.string   "Comments"
+    t.integer  "PrintLetter"
+    t.integer  "FloatingSub"
+    t.integer  "InstructorAccountObjectID"
+    t.integer  "ObjectID"
+    t.string   "FranchiseTypeAddendum"
+    t.datetime "DateAcknowledged"
+    t.datetime "BeginningRptDate"
+    t.integer  "InstructorObjectID"
+    t.datetime "DateAgreementSigned"
+    t.datetime "DateTrainingMatSent"
+    t.string   "FranchiseType"
+    t.integer  "DistrictObjectID"
+    t.datetime "ExpirationDate"
+    t.datetime "CFFDate"
+    t.string   "FeeRcvd"
+    t.decimal  "FeeAmount",                 :precision => 10, :scale => 0
+    t.datetime "DateApplicationRcvd"
+    t.datetime "DateCSPrinted"
+    t.integer  "Inactive"
+    t.integer  "DateAgreementSent"
+    t.integer  "CFFPctCalc"
+    t.integer  "MainFranchise"
+    t.decimal  "MonthlyMin",                :precision => 13, :scale => 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "globals", :force => true do |t|
+    t.decimal  "ACHTransactionFee",      :precision => 13, :scale => 2
+    t.string   "AdminEMail"
+    t.string   "AdminMailerFrom"
+    t.string   "Host"
+    t.string   "Organization"
+    t.string   "UserName"
+    t.datetime "AccountingDate"
+    t.decimal  "CCTransactionFee",       :precision => 13, :scale => 2
+    t.decimal  "PaymentChangeFee",       :precision => 13, :scale => 2
+    t.datetime "DailyDate"
+    t.integer  "DailyFileIndex"
+    t.decimal  "InsufficientFundsFee",   :precision => 13, :scale => 2
+    t.decimal  "InstructorSignUpFee",    :precision => 13, :scale => 2
+    t.string   "MacolaReceive"
+    t.string   "MacolaSend"
+    t.integer  "ObjectID"
+    t.integer  "PasswordExpirationDays"
+    t.decimal  "StudentSignUpFee",       :precision => 13, :scale => 2
+    t.datetime "TranHistoryDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "instructoraccounts", :force => true do |t|
+    t.integer  "ObjectID"
+    t.string   "Status"
+    t.integer  "InstructorObjectID"
+    t.integer  "FacilityObjectID"
+    t.string   "Name"
+    t.integer  "FranchiseObjectID"
+    t.integer  "NewInstructor"
+    t.integer  "JBSAccountObjectID"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "instructors", :force => true do |t|
+    t.datetime "InsuranceStartDate"
+    t.integer  "InsPrintCertificate"
+    t.datetime "BreachDate"
+    t.integer  "MonitoredPass"
+    t.string   "PSALevel"
+    t.string   "PSAYear"
+    t.integer  "PrintNewInst"
+    t.integer  "Coordinator"
+    t.integer  "CatalogCount"
+    t.integer  "ObjectID"
+    t.integer  "MediaCount"
+    t.integer  "SubstituteFeePayed"
+    t.datetime "MusicASCAPPaid"
+    t.string   "Status"
+    t.datetime "InsuranceEndDate"
+    t.integer  "InsurancePaid"
+    t.datetime "CPRExpirationDate"
+    t.integer  "InsuranceTypeObjectID"
+    t.integer  "MonAssistObjectID"
+    t.integer  "PrintResign"
+    t.integer  "Trainer"
+    t.string   "WorkshopGrade"
+    t.string   "BreachStatus"
+    t.integer  "SubstituteFeeBilled"
+    t.string   "InstructorID"
+    t.datetime "DateCertified"
+    t.string   "WorkshopTestStatus"
+    t.decimal  "BreachAmount",          :precision => 13, :scale => 2
+    t.string   "Notes"
+    t.datetime "MonitoredDate"
+    t.integer  "PrintTraineeLbl"
+    t.integer  "MonAssistVideo"
+    t.integer  "PersonObjectID"
+    t.string   "StatusReason"
+    t.integer  "WorkshopObjectID"
+    t.string   "MediaFormat"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jclsglobals", :force => true do |t|
+    t.integer  "ObjectID"
+    t.string   "FaxBodyText"
+    t.integer  "SearchRadius"
+    t.string   "FaxHeaderText"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jfsglobals", :force => true do |t|
+    t.datetime "AccountingMonth"
+    t.string   "ContactEmail"
+    t.string   "ContactName"
+    t.string   "ContactSubject"
+    t.decimal  "FranMonthMin",    :precision => 13, :scale => 2
+    t.integer  "MIRCutoffDay"
+    t.decimal  "MIRLateFee",      :precision => 13, :scale => 2
+    t.integer  "ObjectID"
+    t.decimal  "SubstituteFee",   :precision => 13, :scale => 2
+    t.decimal  "WeeklyFee",       :precision => 13, :scale => 2
+    t.string   "ResTermMsg"
+    t.string   "ResTermSub"
+    t.integer  "GLEntryNo"
+    t.boolean  "ProcessES"
+    t.decimal  "SubMIRLateFee",   :precision => 13, :scale => 2
+    t.integer  "SubMIRCutoffDay"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "qc_globals", :force => true do |t|
+    t.integer  "ObjectID"
+    t.decimal  "EvaluationPay",    :precision => 13, :scale => 2
+    t.decimal  "PracticePay",      :precision => 13, :scale => 2
+    t.decimal  "ScreeningPay",     :precision => 13, :scale => 2
+    t.decimal  "HourlyPay",        :precision => 13, :scale => 2
+    t.decimal  "Mileage",          :precision => 6,  :scale => 3
+    t.integer  "MileageCutoff"
+    t.integer  "PayrollCutoffDay"
+    t.string   "ReportPeriod"
+    t.string   "TravelTiers"
+    t.decimal  "VideoPay",         :precision => 13, :scale => 2
+    t.datetime "created_at",                                      :null => false
+    t.datetime "updated_at",                                      :null => false
+  end
+
+  create_table "qc_nextevals", :force => true do |t|
+    t.datetime "LastEvalDate",        :limit => 4
+    t.integer  "InstructorObjectID"
+    t.string   "LastEvalResult"
+    t.integer  "CoordinatorObjectID"
+    t.integer  "Video"
+    t.datetime "NextEvalDate"
+    t.integer  "ObjectID"
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
+  end
+
+  create_table "qc_reports", :force => true do |t|
+    t.integer  "ObjectID"
+    t.datetime "ReportPeriod"
+    t.datetime "PayrollPeriod"
+    t.integer  "CoordinatorObjectID"
+    t.integer  "IsApproved"
+    t.integer  "DMObjectID"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "role", :primary_key => "ObjectID", :force => true do |t|
+    t.boolean "AutomaticRole"
+    t.string  "ApplicationName"
+    t.string  "ButtonText"
+    t.string  "PlainText"
+    t.string  "RoleID"
+    t.string  "TemplateName"
+    t.integer "TimeOut"
+    t.boolean "LockOut"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "workshops", :force => true do |t|
+    t.datetime "WorkshopStartDate"
+    t.integer  "Complete"
+    t.integer  "ObjectID"
+    t.string   "City"
+    t.integer  "CountryObjectID"
+    t.integer  "StateObjectID"
+    t.integer  "DistrictObjectID"
+    t.datetime "WorkshopEndDate"
+    t.integer  "TrainerObjectID"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+end

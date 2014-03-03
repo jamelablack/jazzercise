@@ -1,0 +1,6 @@
+class Instructor < ActiveRecord::Base
+  attr_accessible :BreachAmount, :BreachDate, :BreachStatus, :CPRExpirationDate, :CatalogCount, :Coordinator, :DateCertified, :InsPrintCertificate, :InstructorID, :InsuranceEndDate, :InsurancePaid, :InsuranceStartDate, :InsuranceTypeObjectID, :MediaCount, :MediaFormat, :MonAssistObjectID, :MonAssistVideo, :MonitoredDate, :MonitoredPass, :MusicASCAPPaid, :Notes, :ObjectID, :PSALevel, :PSAYear, :PersonObjectID, :PrintNewInst, :PrintResign, :PrintTraineeLbl, :Status, :StatusReason, :SubstituteFeeBilled, :SubstituteFeePayed, :Trainer, :WorkshopGrade, :WorkshopObjectID, :WorkshopTestStatus
+
+
+
+end

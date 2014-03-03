@@ -1,0 +1,45 @@
+<%= form_for(@qc_nexteval) do |f| %>
+  <% if @qc_nexteval.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@qc_nexteval.errors.count, "error") %> prohibited this qc_nexteval from being saved:</h2>
+
+      <ul>
+      <% @qc_nexteval.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :LastEvalDate %><br />
+    <%= f.datetime_select :LastEvalDate %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorObjectID %><br />
+    <%= f.number_field :InstructorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :LastEvalResult %><br />
+    <%= f.text_field :LastEvalResult %>
+  </div>
+  <div class="field">
+    <%= f.label :CoordinatorObjectID %><br />
+    <%= f.number_field :CoordinatorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :Video %><br />
+    <%= f.check_box :Video %>
+  </div>
+  <div class="field">
+    <%= f.label :NextEvalDate %><br />
+    <%= f.datetime_select :NextEvalDate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

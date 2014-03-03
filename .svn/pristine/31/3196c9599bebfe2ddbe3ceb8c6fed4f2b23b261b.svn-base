@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Comments: MyString
+  ObjectID: 1
+  ReportObjectID: 1
+  InstructorObjectID: 1
+  Miles: false
+  X_Date_X: 2013-11-20 20:27:11
+  Video: false
+  Result: MyString
+
+two:
+  Comments: MyString
+  ObjectID: 1
+  ReportObjectID: 1
+  InstructorObjectID: 1
+  Miles: false
+  X_Date_X: 2013-11-20 20:27:11
+  Video: false
+  Result: MyString

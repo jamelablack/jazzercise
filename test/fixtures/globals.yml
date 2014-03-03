@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ACHTransactionFee: 1.5
+  AdminEMail: MyString
+  AdminMailerFrom: MyString
+  Host: MyString
+  Organization: MyString
+  UserName: MyString
+  AccountingDate: 2013-10-21 06:46:18
+  CCTransactionFee: 1.5
+  PaymentChangeFee: 1.5
+  DailyDate: 2013-10-21 06:46:18
+  DailyFileIndex: 1
+  InsufficientFundsFee: 1.5
+  InstructorSignUpFee: 1.5
+  MacolaReceive: MyString
+  MacolaSend: MyString
+  ObjectID: 1
+  Password: MyString
+  ExpirationDays: 1
+  StudentSignUpFee: 1.5
+  TransHistoryDate: 2013-10-21 06:46:18
+
+two:
+  ACHTransactionFee: 1.5
+  AdminEMail: MyString
+  AdminMailerFrom: MyString
+  Host: MyString
+  Organization: MyString
+  UserName: MyString
+  AccountingDate: 2013-10-21 06:46:18
+  CCTransactionFee: 1.5
+  PaymentChangeFee: 1.5
+  DailyDate: 2013-10-21 06:46:18
+  DailyFileIndex: 1
+  InsufficientFundsFee: 1.5
+  InstructorSignUpFee: 1.5
+  MacolaReceive: MyString
+  MacolaSend: MyString
+  ObjectID: 1
+  Password: MyString
+  ExpirationDays: 1
+  StudentSignUpFee: 1.5
+  TransHistoryDate: 2013-10-21 06:46:18

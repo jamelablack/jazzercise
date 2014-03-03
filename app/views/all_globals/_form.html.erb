@@ -1,0 +1,53 @@
+<%= form_for(@all_global) do |f| %>
+  <% if @all_global.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@all_global.errors.count, "error") %> prohibited this all_global from being saved:</h2>
+
+      <ul>
+      <% @all_global.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :key_name %><br />
+    <%= f.text_field :key_name %>
+  </div>
+  <div class="field">
+    <%= f.label :value_type %><br />
+    <%= f.number_field :value_type %>
+  </div>
+  <div class="field">
+    <%= f.label :str_value %><br />
+    <%= f.text_field :str_value %>
+  </div>
+  <div class="field">
+    <%= f.label :int_value %><br />
+    <%= f.number_field :int_value %>
+  </div>
+  <div class="field">
+    <%= f.label :dec_value %><br />
+    <%= f.text_field :dec_value %>
+  </div>
+  <div class="field">
+    <%= f.label :date_value %><br />
+    <%= f.datetime_select :date_value %>
+  </div>
+  <div class="field">
+    <%= f.label :boo_value %><br />
+    <%= f.check_box :boo_value %>
+  </div>
+  <div class="field">
+    <%= f.label :effective_date %><br />
+    <%= f.datetime_select :effective_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,28 @@
+class CreateGlobals < ActiveRecord::Migration
+  def change
+    create_table :globals do |t|
+      t.decimal :ACHTransactionFee
+      t.string :AdminEMail
+      t.string :AdminMailerFrom
+      t.string :Host
+      t.string :Organization
+      t.string :UserName
+      t.datetime :AccountingDate
+      t.decimal :CCTransactionFee
+      t.decimal :PaymentChangeFee
+      t.datetime :DailyDate
+      t.integer :DailyFileIndex
+      t.decimal :InsufficientFundsFee
+      t.decimal :InstructorSignUpFee
+      t.string :MacolaReceive
+      t.string :MacolaSend
+      t.integer :ObjectID
+      t.string :Password
+      t.integer :ExpirationDays
+      t.decimal :StudentSignUpFee
+      t.datetime :TransHistoryDate
+
+      t.timestamps
+    end
+  end
+end

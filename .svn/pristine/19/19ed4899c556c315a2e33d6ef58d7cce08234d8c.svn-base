@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Accountingmonth:</b>
+  <%= @jfsglobal.AccountingMonth %>
+</p>
+
+<p>
+  <b>Contactemail:</b>
+  <%= @jfsglobal.ContactEmail %>
+</p>
+
+<p>
+  <b>Contactname:</b>
+  <%= @jfsglobal.ContactName %>
+</p>
+
+<p>
+  <b>Contactsubject:</b>
+  <%= @jfsglobal.ContactSubject %>
+</p>
+
+<p>
+  <b>Franmonthmin:</b>
+  <%= @jfsglobal.FranMonthMin %>
+</p>
+
+<p>
+  <b>Mircutoffday:</b>
+  <%= @jfsglobal.MIRCutoffDay %>
+</p>
+
+<p>
+  <b>Mirlatefee:</b>
+  <%= @jfsglobal.MIRLateFee %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @jfsglobal.ObjectID %>
+</p>
+
+<p>
+  <b>Substitutefee:</b>
+  <%= @jfsglobal.SubstituteFee %>
+</p>
+
+<p>
+  <b>Weeklyfee:</b>
+  <%= @jfsglobal.WeeklyFee %>
+</p>
+
+<p>
+  <b>Restermmsg:</b>
+  <%= @jfsglobal.ResTermMsg %>
+</p>
+
+<p>
+  <b>Restermsub:</b>
+  <%= @jfsglobal.ResTermSub %>
+</p>
+
+<p>
+  <b>Glentryno:</b>
+  <%= @jfsglobal.GLEntryNo %>
+</p>
+
+<p>
+  <b>Processes:</b>
+  <%= @jfsglobal.ProcessES %>
+</p>
+
+<p>
+  <b>Submirlatefee:</b>
+  <%= @jfsglobal.SubMIRLateFee %>
+</p>
+
+<p>
+  <b>Submircutoffday:</b>
+  <%= @jfsglobal.SubMIRCutoffDay %>
+</p>
+
+
+<%= link_to 'Edit', edit_jfsglobal_path(@jfsglobal) %> |
+<%= link_to 'Back', jfsglobals_path %>

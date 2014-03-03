@@ -1,0 +1,53 @@
+<%= form_for(@workshop) do |f| %>
+  <% if @workshop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@workshop.errors.count, "error") %> prohibited this workshop from being saved:</h2>
+
+      <ul>
+      <% @workshop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :WorkshopStartDate %><br />
+    <%= f.datetime_select :WorkshopStartDate %>
+  </div>
+  <div class="field">
+    <%= f.label :Complete %><br />
+    <%= f.number_field :Complete %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br />
+    <%= f.text_field :City %>
+  </div>
+  <div class="field">
+    <%= f.label :CountryObjectID %><br />
+    <%= f.number_field :CountryObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :StateObjectID %><br />
+    <%= f.number_field :StateObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :DistrictObjectID %><br />
+    <%= f.number_field :DistrictObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :WorkshopEndDate %><br />
+    <%= f.text_field :WorkshopEndDate %>
+  </div>
+  <div class="field">
+    <%= f.label :TrainerObjectID %><br />
+    <%= f.number_field :TrainerObjectID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

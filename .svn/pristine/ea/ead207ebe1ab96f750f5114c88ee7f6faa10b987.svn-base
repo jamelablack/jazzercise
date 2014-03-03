@@ -1,0 +1,6 @@
+<h1>Editing qc_evaluation</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @qc_evaluation %> |
+<%= link_to 'Back', qc_evaluations_path %>

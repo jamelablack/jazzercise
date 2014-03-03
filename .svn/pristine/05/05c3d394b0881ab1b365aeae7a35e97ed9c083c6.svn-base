@@ -1,0 +1,5 @@
+class Facilityinstructor < ActiveRecord::Base
+  attr_accessible :FacilityObjectID, :FirstName, :InstructorObjectID, :Lastname, :ObjectID, :Pending, :PendingAction, :ShowOrder
+	belongs_to :instructor, :foreign_key => "InstructorObjectID"
+
+end

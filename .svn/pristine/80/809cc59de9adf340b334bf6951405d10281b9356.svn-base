@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @royaltybilling.ObjectID %>
+</p>
+
+<p>
+  <b>Royaltybilled:</b>
+  <%= @royaltybilling.RoyaltyBilled %>
+</p>
+
+<p>
+  <b>Instructorobjectid:</b>
+  <%= @royaltybilling.InstructorObjectID %>
+</p>
+
+<p>
+  <b>Royaltynameobjid:</b>
+  <%= @royaltybilling.RoyaltyNameObjID %>
+</p>
+
+
+<%= link_to 'Edit', edit_royaltybilling_path(@royaltybilling) %> |
+<%= link_to 'Back', royaltybillings_path %>

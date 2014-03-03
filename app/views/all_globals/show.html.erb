@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category:</b>
+  <%= @all_global.category %>
+</p>
+
+<p>
+  <b>Key name:</b>
+  <%= @all_global.key_name %>
+</p>
+
+<p>
+  <b>Value type:</b>
+  <%= @all_global.value_type %>
+</p>
+
+<p>
+  <b>Str value:</b>
+  <%= @all_global.str_value %>
+</p>
+
+<p>
+  <b>Int value:</b>
+  <%= @all_global.int_value %>
+</p>
+
+<p>
+  <b>Dec value:</b>
+  <%= @all_global.dec_value %>
+</p>
+
+<p>
+  <b>Date value:</b>
+  <%= @all_global.date_value %>
+</p>
+
+<p>
+  <b>Boo value:</b>
+  <%= @all_global.boo_value %>
+</p>
+
+<p>
+  <b>Effective date:</b>
+  <%= @all_global.effective_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_all_global_path(@all_global) %> |
+<%= link_to 'Back', all_globals_path %>

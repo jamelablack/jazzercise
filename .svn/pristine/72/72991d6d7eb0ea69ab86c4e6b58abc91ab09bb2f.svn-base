@@ -1,0 +1,87 @@
+<h1>Listing jclsclasses</h1>
+
+<table>
+  <tr>
+    <th>Enddate</th>
+    <th>Daywednesday</th>
+    <th>Daysaturday</th>
+    <th>Zipcodepopulation</th>
+    <th>Nearbyfacilitymiles</th>
+    <th>Formatr</th>
+    <th>Objectid</th>
+    <th>Deleted</th>
+    <th>Citypopulation</th>
+    <th>Formatcq</th>
+    <th>Formatbs</th>
+    <th>Instructorobjectid</th>
+    <th>Formatct</th>
+    <th>Formatex</th>
+    <th>Formatjp</th>
+    <th>Newclass</th>
+    <th>Formatjr</th>
+    <th>Facilityobjectid</th>
+    <th>Formattd</th>
+    <th>Formatsl</th>
+    <th>Formatpt</th>
+    <th>Formatst</th>
+    <th>Misc</th>
+    <th>X time x</th>
+    <th>Startdate</th>
+    <th>Daysunday</th>
+    <th>Daymonday</th>
+    <th>Daytuesday</th>
+    <th>Phoneprimary</th>
+    <th>Nearbyfacility</th>
+    <th>Locationchange</th>
+    <th>Daythursday</th>
+    <th>Dayfriday</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jclsclasses.each do |jclsclass| %>
+  <tr>
+    <td><%= jclsclass.EndDate %></td>
+    <td><%= jclsclass.DayWednesday %></td>
+    <td><%= jclsclass.DaySaturday %></td>
+    <td><%= jclsclass.ZipCodePopulation %></td>
+    <td><%= jclsclass.NearbyFacilityMiles %></td>
+    <td><%= jclsclass.FormatR %></td>
+    <td><%= jclsclass.ObjectID %></td>
+    <td><%= jclsclass.Deleted %></td>
+    <td><%= jclsclass.CityPopulation %></td>
+    <td><%= jclsclass.FormatCQ %></td>
+    <td><%= jclsclass.FormatBS %></td>
+    <td><%= jclsclass.InstructorObjectID %></td>
+    <td><%= jclsclass.FormatCT %></td>
+    <td><%= jclsclass.FormatEX %></td>
+    <td><%= jclsclass.FormatJP %></td>
+    <td><%= jclsclass.NewClass %></td>
+    <td><%= jclsclass.FormatJR %></td>
+    <td><%= jclsclass.FacilityObjectID %></td>
+    <td><%= jclsclass.FormatTD %></td>
+    <td><%= jclsclass.FormatSL %></td>
+    <td><%= jclsclass.FormatPT %></td>
+    <td><%= jclsclass.FormatST %></td>
+    <td><%= jclsclass.Misc %></td>
+    <td><%= jclsclass.X_Time_X %></td>
+    <td><%= jclsclass.StartDate %></td>
+    <td><%= jclsclass.DaySunday %></td>
+    <td><%= jclsclass.DayMonday %></td>
+    <td><%= jclsclass.DayTuesday %></td>
+    <td><%= jclsclass.PhonePrimary %></td>
+    <td><%= jclsclass.NearbyFacility %></td>
+    <td><%= jclsclass.LocationChange %></td>
+    <td><%= jclsclass.DayThursday %></td>
+    <td><%= jclsclass.DayFriday %></td>
+    <td><%= link_to 'Show', jclsclass %></td>
+    <td><%= link_to 'Edit', edit_jclsclass_path(jclsclass) %></td>
+    <td><%= link_to 'Destroy', jclsclass, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Jclsclass', new_jclsclass_path %>

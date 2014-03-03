@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Comments:</b>
+  <%= @qc_evaluation.Comments %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @qc_evaluation.ObjectID %>
+</p>
+
+<p>
+  <b>Reportobjectid:</b>
+  <%= @qc_evaluation.ReportObjectID %>
+</p>
+
+<p>
+  <b>Instructorobjectid:</b>
+  <%= @qc_evaluation.InstructorObjectID %>
+</p>
+
+<p>
+  <b>Miles:</b>
+  <%= @qc_evaluation.Miles %>
+</p>
+
+<p>
+  <b>X date x:</b>
+  <%= @qc_evaluation.X_Date_X %>
+</p>
+
+<p>
+  <b>Video:</b>
+  <%= @qc_evaluation.Video %>
+</p>
+
+<p>
+  <b>Result:</b>
+  <%= @qc_evaluation.Result %>
+</p>
+
+
+<%= link_to 'Edit', edit_qc_evaluation_path(@qc_evaluation) %> |
+<%= link_to 'Back', qc_evaluations_path %>

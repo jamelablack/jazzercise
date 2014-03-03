@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @jclsglobal.ObjectID %>
+</p>
+
+<p>
+  <b>Faxbodytext:</b>
+  <%= @jclsglobal.FaxBodyText %>
+</p>
+
+<p>
+  <b>Searchradius:</b>
+  <%= @jclsglobal.SearchRadius %>
+</p>
+
+<p>
+  <b>Faxheadertext:</b>
+  <%= @jclsglobal.FaxHeaderText %>
+</p>
+
+
+<%= link_to 'Edit', edit_jclsglobal_path(@jclsglobal) %> |
+<%= link_to 'Back', jclsglobals_path %>

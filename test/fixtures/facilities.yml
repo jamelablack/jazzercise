@@ -1,0 +1,71 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ExWeb: 1
+  EMail: MyString
+  LocChange: 1
+  FacilityNumber: 1
+  Approved: 1
+  AddressLocalArea: MyString
+  ObjectID: 1
+  EndMonth: 2013-11-18 23:38:24
+  Deleted: 1
+  CenterCode: 1
+  StartMonth: 2013-11-18 23:38:24
+  InstructorObjectID: 1
+  Name: MyString
+  Highway: MyString
+  Landmark: MyString
+  DistrictObjectID: 1
+  AttributeCC: 1
+  AttributeCH: 1
+  PhoneFax: MyString
+  PhonePrimary: MyString
+  Notes: MyString
+  AttributeKD: 1
+  AttributeMA: 1
+  AttributeLK: 1
+  AttributeRB: 1
+  AttributeSH: 1
+  AttributeWF: 1
+  AttributePT: 1
+  AttributeST: 1
+  AttributeWT: 1
+  AttributeXT: 1
+  PhoneSecondary: MyString
+  Directions: MyString
+
+two:
+  ExWeb: 1
+  EMail: MyString
+  LocChange: 1
+  FacilityNumber: 1
+  Approved: 1
+  AddressLocalArea: MyString
+  ObjectID: 1
+  EndMonth: 2013-11-18 23:38:24
+  Deleted: 1
+  CenterCode: 1
+  StartMonth: 2013-11-18 23:38:24
+  InstructorObjectID: 1
+  Name: MyString
+  Highway: MyString
+  Landmark: MyString
+  DistrictObjectID: 1
+  AttributeCC: 1
+  AttributeCH: 1
+  PhoneFax: MyString
+  PhonePrimary: MyString
+  Notes: MyString
+  AttributeKD: 1
+  AttributeMA: 1
+  AttributeLK: 1
+  AttributeRB: 1
+  AttributeSH: 1
+  AttributeWF: 1
+  AttributePT: 1
+  AttributeST: 1
+  AttributeWT: 1
+  AttributeXT: 1
+  PhoneSecondary: MyString
+  Directions: MyString

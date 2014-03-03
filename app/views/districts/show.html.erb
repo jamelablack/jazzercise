@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Districtname:</b>
+  <%= @district.DistrictName %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @district.ObjectID %>
+</p>
+
+<p>
+  <b>Deleted:</b>
+  <%= @district.Deleted %>
+</p>
+
+<p>
+  <b>Countryobjectid:</b>
+  <%= @district.CountryObjectID %>
+</p>
+
+<p>
+  <b>Districtmanagerobjectid:</b>
+  <%= @district.DistrictManagerObjectID %>
+</p>
+
+<p>
+  <b>Stateobjectid:</b>
+  <%= @district.StateObjectID %>
+</p>
+
+<p>
+  <b>Districtcode:</b>
+  <%= @district.DistrictCode %>
+</p>
+
+<p>
+  <b>Commissionpct:</b>
+  <%= @district.CommissionPct %>
+</p>
+
+
+<%= link_to 'Edit', edit_district_path(@district) %> |
+<%= link_to 'Back', districts_path %>

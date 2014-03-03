@@ -1,0 +1,161 @@
+<%= form_for(@instructor) do |f| %>
+  <% if @instructor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@instructor.errors.count, "error") %> prohibited this instructor from being saved:</h2>
+
+      <ul>
+      <% @instructor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :InsuranceStartDate %><br />
+    <%= f.datetime_select :InsuranceStartDate %>
+  </div>
+  <div class="field">
+    <%= f.label :InsPrintCertificate %><br />
+    <%= f.number_field :InsPrintCertificate %>
+  </div>
+  <div class="field">
+    <%= f.label :BreachDate %><br />
+    <%= f.datetime_select :BreachDate %>
+  </div>
+  <div class="field">
+    <%= f.label :MonitoredPass %><br />
+    <%= f.number_field :MonitoredPass %>
+  </div>
+  <div class="field">
+    <%= f.label :PSALevel %><br />
+    <%= f.text_field :PSALevel %>
+  </div>
+  <div class="field">
+    <%= f.label :PSAYear %><br />
+    <%= f.text_field :PSAYear %>
+  </div>
+  <div class="field">
+    <%= f.label :PrintNewInst %><br />
+    <%= f.number_field :PrintNewInst %>
+  </div>
+  <div class="field">
+    <%= f.label :Coordinator %><br />
+    <%= f.number_field :Coordinator %>
+  </div>
+  <div class="field">
+    <%= f.label :CatalogCount %><br />
+    <%= f.number_field :CatalogCount %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :MediaCount %><br />
+    <%= f.number_field :MediaCount %>
+  </div>
+  <div class="field">
+    <%= f.label :SubstituteFeePayed %><br />
+    <%= f.number_field :SubstituteFeePayed %>
+  </div>
+  <div class="field">
+    <%= f.label :MusicASCAPPaid %><br />
+    <%= f.datetime_select :MusicASCAPPaid %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br />
+    <%= f.text_field :Status %>
+  </div>
+  <div class="field">
+    <%= f.label :InsuranceEndDate %><br />
+    <%= f.datetime_select :InsuranceEndDate %>
+  </div>
+  <div class="field">
+    <%= f.label :InsurancePaid %><br />
+    <%= f.number_field :InsurancePaid %>
+  </div>
+  <div class="field">
+    <%= f.label :CPRExpirationDate %><br />
+    <%= f.datetime_select :CPRExpirationDate %>
+  </div>
+  <div class="field">
+    <%= f.label :InsuranceTypeObjectID %><br />
+    <%= f.number_field :InsuranceTypeObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :MonAssistObjectID %><br />
+    <%= f.number_field :MonAssistObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :PrintResign %><br />
+    <%= f.number_field :PrintResign %>
+  </div>
+  <div class="field">
+    <%= f.label :Trainer %><br />
+    <%= f.number_field :Trainer %>
+  </div>
+  <div class="field">
+    <%= f.label :WorkshopGrade %><br />
+    <%= f.text_field :WorkshopGrade %>
+  </div>
+  <div class="field">
+    <%= f.label :BreachStatus %><br />
+    <%= f.text_field :BreachStatus %>
+  </div>
+  <div class="field">
+    <%= f.label :SubstituteFeeBilled %><br />
+    <%= f.number_field :SubstituteFeeBilled %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorID %><br />
+    <%= f.text_field :InstructorID %>
+  </div>
+  <div class="field">
+    <%= f.label :DateCertified %><br />
+    <%= f.datetime_select :DateCertified %>
+  </div>
+  <div class="field">
+    <%= f.label :WorkshopTestStatus %><br />
+    <%= f.text_field :WorkshopTestStatus %>
+  </div>
+  <div class="field">
+    <%= f.label :BreachAmount %><br />
+    <%= f.text_field :BreachAmount %>
+  </div>
+  <div class="field">
+    <%= f.label :Notes %><br />
+    <%= f.text_field :Notes %>
+  </div>
+  <div class="field">
+    <%= f.label :MonitoredDate %><br />
+    <%= f.datetime_select :MonitoredDate %>
+  </div>
+  <div class="field">
+    <%= f.label :PrintTraineeLbl %><br />
+    <%= f.number_field :PrintTraineeLbl %>
+  </div>
+  <div class="field">
+    <%= f.label :MonAssistVideo %><br />
+    <%= f.number_field :MonAssistVideo %>
+  </div>
+  <div class="field">
+    <%= f.label :PersonObjectID %><br />
+    <%= f.number_field :PersonObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :StatusReason %><br />
+    <%= f.text_field :StatusReason %>
+  </div>
+  <div class="field">
+    <%= f.label :WorkshopObjectID %><br />
+    <%= f.number_field :WorkshopObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :MediaFormat %><br />
+    <%= f.text_field :MediaFormat %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

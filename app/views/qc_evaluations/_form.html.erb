@@ -1,0 +1,49 @@
+<%= form_for(@qc_evaluation) do |f| %>
+  <% if @qc_evaluation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@qc_evaluation.errors.count, "error") %> prohibited this qc_evaluation from being saved:</h2>
+
+      <ul>
+      <% @qc_evaluation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Comments %><br />
+    <%= f.text_field :Comments %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :ReportObjectID %><br />
+    <%= f.number_field :ReportObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorObjectID %><br />
+    <%= f.number_field :InstructorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :Miles %><br />
+    <%= f.check_box :Miles %>
+  </div>
+  <div class="field">
+    <%= f.label :X_Date_X %><br />
+    <%= f.datetime_select :X_Date_X %>
+  </div>
+  <div class="field">
+    <%= f.label :Video %><br />
+    <%= f.check_box :Video %>
+  </div>
+  <div class="field">
+    <%= f.label :Result %><br />
+    <%= f.text_field :Result %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

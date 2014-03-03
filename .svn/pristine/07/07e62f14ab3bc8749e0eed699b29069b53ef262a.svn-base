@@ -1,0 +1,6 @@
+<h1>Editing instructoraccount</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @instructoraccount %> |
+<%= link_to 'Back', instructoraccounts_path %>

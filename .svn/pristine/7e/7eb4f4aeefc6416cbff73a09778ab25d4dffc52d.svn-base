@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Workshopstartdate:</b>
+  <%= @workshop.WorkshopStartDate %>
+</p>
+
+<p>
+  <b>Complete:</b>
+  <%= @workshop.Complete %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @workshop.ObjectID %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @workshop.City %>
+</p>
+
+<p>
+  <b>Countryobjectid:</b>
+  <%= @workshop.CountryObjectID %>
+</p>
+
+<p>
+  <b>Stateobjectid:</b>
+  <%= @workshop.StateObjectID %>
+</p>
+
+<p>
+  <b>Districtobjectid:</b>
+  <%= @workshop.DistrictObjectID %>
+</p>
+
+<p>
+  <b>Workshopenddate:</b>
+  <%= @workshop.WorkshopEndDate %>
+</p>
+
+<p>
+  <b>Trainerobjectid:</b>
+  <%= @workshop.TrainerObjectID %>
+</p>
+
+
+<%= link_to 'Edit', edit_workshop_path(@workshop) %> |
+<%= link_to 'Back', workshops_path %>

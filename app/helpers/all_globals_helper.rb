@@ -1,0 +1,4 @@
+module AllGlobalsHelper
+
+
+end

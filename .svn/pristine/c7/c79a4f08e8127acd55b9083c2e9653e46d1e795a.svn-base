@@ -1,0 +1,18 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+
+<h1>Editing User Person for : <%if @user_person.person != nil %> <%=@user_person.person.full_name%><%end %></h1>
+
+<%= render 'form' %>
+
+
+<%= link_to 'Show', @user_person %> |
+<%= link_to 'Back', user_people_path %>
+
+</div>
+  <div class="clr"></div>
+</div>

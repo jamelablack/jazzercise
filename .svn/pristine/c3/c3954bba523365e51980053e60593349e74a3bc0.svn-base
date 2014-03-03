@@ -1,0 +1,37 @@
+<h1>Listing qc_evaluations</h1>
+
+<table>
+  <tr>
+    <th>Comments</th>
+    <th>Objectid</th>
+    <th>Reportobjectid</th>
+    <th>Instructorobjectid</th>
+    <th>Miles</th>
+    <th>X date x</th>
+    <th>Video</th>
+    <th>Result</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qc_evaluations.each do |qc_evaluation| %>
+  <tr>
+    <td><%= qc_evaluation.Comments %></td>
+    <td><%= qc_evaluation.ObjectID %></td>
+    <td><%= qc_evaluation.ReportObjectID %></td>
+    <td><%= qc_evaluation.InstructorObjectID %></td>
+    <td><%= qc_evaluation.Miles %></td>
+    <td><%= qc_evaluation.X_Date_X %></td>
+    <td><%= qc_evaluation.Video %></td>
+    <td><%= qc_evaluation.Result %></td>
+    <td><%= link_to 'Show', qc_evaluation %></td>
+    <td><%= link_to 'Edit', edit_qc_evaluation_path(qc_evaluation) %></td>
+    <td><%= link_to 'Destroy', qc_evaluation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Qc evaluation', new_qc_evaluation_path %>

@@ -1,0 +1,3 @@
+class Facilityinstructor < ActiveRecord::Base
+  attr_accessible :FacilityObjectID, :FirstName, :InstructorObjectID, :Lastname, :ObjectID, :Pending, :PendingAction, :ShowOrder
+end

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Lastname: MyString
+  ObjectID: 1
+  ShowOrder: 1
+  PendingAction: MyString
+  InstructorObjectID: 1
+  FacilityObjectID: 1
+  FirstName: MyString
+  Pending: 1
+
+two:
+  Lastname: MyString
+  ObjectID: 1
+  ShowOrder: 1
+  PendingAction: MyString
+  InstructorObjectID: 1
+  FacilityObjectID: 1
+  FirstName: MyString
+  Pending: 1

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  AutomaticRole: 
+  ApplicationName: MyString
+  ButtonText: MyString
+  ObjectID: 1
+  PlainText: MyString
+  TemplateName: MyString
+  TimeOut: 1
+  LockOut: 
+
+two:
+  AutomaticRole: 
+  ApplicationName: MyString
+  ButtonText: MyString
+  ObjectID: 1
+  PlainText: MyString
+  TemplateName: MyString
+  TimeOut: 1
+  LockOut: 

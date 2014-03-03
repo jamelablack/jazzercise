@@ -1,0 +1,49 @@
+<%= form_for(@insurance) do |f| %>
+  <% if @insurance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@insurance.errors.count, "error") %> prohibited this insurance from being saved:</h2>
+
+      <ul>
+      <% @insurance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :InsuranceStartDate %><br />
+    <%= f.datetime_select :InsuranceStartDate %>
+  </div>
+  <div class="field">
+    <%= f.label :InsRate %><br />
+    <%= f.text_field :InsRate %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :Deleted %><br />
+    <%= f.check_box :Deleted %>
+  </div>
+  <div class="field">
+    <%= f.label :InsurancePolicyNumber %><br />
+    <%= f.text_field :InsurancePolicyNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :InsuranceEndDate %><br />
+    <%= f.datetime_select :InsuranceEndDate %>
+  </div>
+  <div class="field">
+    <%= f.label :InsType %><br />
+    <%= f.text_field :InsType %>
+  </div>
+  <div class="field">
+    <%= f.label :InsuranceKind %><br />
+    <%= f.text_field :InsuranceKind %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

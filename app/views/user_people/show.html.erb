@@ -1,0 +1,63 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+<p>
+
+<p>
+  <b>Allowlogon:</b>
+  <%= @user_person.AllowLogon %>
+</p>
+
+<p>
+  <b>Autolockout:</b>
+  <%= @user_person.AutoLockout %>
+</p>
+
+
+<p>
+  <b>Deleteduseridkey:</b>
+  <%= @user_person.DeletedUserIDKey %>
+</p>
+
+<p>
+  <b>Deletedautolockoutkey:</b>
+  <%= @user_person.DeletedAutoLockoutKey %>
+</p>
+
+<p>
+  <b>Deleted:</b>
+  <%= @user_person.Deleted %>
+</p>
+
+<p>
+  <b>Deletedallowlogonkey:</b>
+  <%= @user_person.DeletedAllowLogonKey %>
+</p>
+
+<p>
+  <b>Pwforcechange:</b>
+  <%= @user_person.PWForceChange %>
+</p>
+
+<p>
+  <b>Pwhelpanswer:</b>
+  <%= @user_person.PWHelpAnswer %>
+</p>
+
+<p>
+  <b>Encuserid:</b>
+  <%= @user_person.EncUserID %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_person_path(@user_person) %> |
+<%= link_to 'Back', user_people_path %>
+
+
+</div>
+  <div class="clr"></div>
+</div>
+

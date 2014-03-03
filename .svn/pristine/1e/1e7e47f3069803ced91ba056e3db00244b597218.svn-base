@@ -1,0 +1,19 @@
+class CreateQcGlobals < ActiveRecord::Migration
+  def change
+    create_table :qc_globals do |t|
+      t.integer :ObjectID
+      t.decimal :EvaluationPay
+      t.decimal :PracticePay
+      t.decimal :ScreeningPay
+      t.decimal :HourlyPay
+      t.decimal :Mileage
+      t.integer :MileageCutoff
+      t.integer :PayrollCutoffDay
+      t.string :ReportPeriod
+      t.string :TravelTiers
+      t.decimal :VideoPay
+
+      t.timestamps
+    end
+  end
+end

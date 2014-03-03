@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Achcutoffdate:</b>
+  <%= @eftglobal.ACHCutoffDate %>
+</p>
+
+<p>
+  <b>Achdocscutoffdate:</b>
+  <%= @eftglobal.ACHDocsCutoffDate %>
+</p>
+
+<p>
+  <b>Cccutoffdate:</b>
+  <%= @eftglobal.CCCutoffDate %>
+</p>
+
+<p>
+  <b>Ccdocscutoffdate:</b>
+  <%= @eftglobal.CCDocsCutoffDate %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @eftglobal.ObjectID %>
+</p>
+
+<p>
+  <b>Studentidlengthmin:</b>
+  <%= @eftglobal.StudentIDLengthMin %>
+</p>
+
+<p>
+  <b>Studentidlengthmax:</b>
+  <%= @eftglobal.StudentIDLengthMax %>
+</p>
+
+
+<%= link_to 'Edit', edit_eftglobal_path(@eftglobal) %> |
+<%= link_to 'Back', eftglobals_path %>

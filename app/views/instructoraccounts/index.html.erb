@@ -1,0 +1,37 @@
+<h1>Listing instructoraccounts</h1>
+
+<table>
+  <tr>
+    <th>Objectid</th>
+    <th>Status</th>
+    <th>Instructorobjectid</th>
+    <th>Facilityobjectid</th>
+    <th>Name</th>
+    <th>Franchiseobjectid</th>
+    <th>Newinstructor</th>
+    <th>Jbsaccountobjectid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @instructoraccounts.each do |instructoraccount| %>
+  <tr>
+    <td><%= instructoraccount.ObjectID %></td>
+    <td><%= instructoraccount.Status %></td>
+    <td><%= instructoraccount.InstructorObjectID %></td>
+    <td><%= instructoraccount.FacilityObjectID %></td>
+    <td><%= instructoraccount.Name %></td>
+    <td><%= instructoraccount.FranchiseObjectID %></td>
+    <td><%= instructoraccount.NewInstructor %></td>
+    <td><%= instructoraccount.JBSAccountObjectID %></td>
+    <td><%= link_to 'Show', instructoraccount %></td>
+    <td><%= link_to 'Edit', edit_instructoraccount_path(instructoraccount) %></td>
+    <td><%= link_to 'Destroy', instructoraccount, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Instructoraccount', new_instructoraccount_path %>

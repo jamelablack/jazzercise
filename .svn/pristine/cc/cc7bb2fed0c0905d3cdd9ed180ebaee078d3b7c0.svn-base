@@ -1,0 +1,3 @@
+class Cff < ActiveRecord::Base
+  attr_accessible :FranchiseObjectID”integer, :ObjectID, :SystemCFFObjectID, :cffrate
+end

@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @qc_global.ObjectID %>
+</p>
+
+<p>
+  <b>Evaluationpay:</b>
+  <%= @qc_global.EvaluationPay %>
+</p>
+
+<p>
+  <b>Practicepay:</b>
+  <%= @qc_global.PracticePay %>
+</p>
+
+<p>
+  <b>Screeningpay:</b>
+  <%= @qc_global.ScreeningPay %>
+</p>
+
+<p>
+  <b>Hourlypay:</b>
+  <%= @qc_global.HourlyPay %>
+</p>
+
+<p>
+  <b>Mileage:</b>
+  <%= @qc_global.Mileage %>
+</p>
+
+<p>
+  <b>Mileagecutoff:</b>
+  <%= @qc_global.MileageCutoff %>
+</p>
+
+<p>
+  <b>Payrollcutoffday:</b>
+  <%= @qc_global.PayrollCutoffDay %>
+</p>
+
+<p>
+  <b>Reportperiod:</b>
+  <%= @qc_global.ReportPeriod %>
+</p>
+
+<p>
+  <b>Traveltiers:</b>
+  <%= @qc_global.TravelTiers %>
+</p>
+
+<p>
+  <b>Videopay:</b>
+  <%= @qc_global.VideoPay %>
+</p>
+
+
+<%= link_to 'Edit', edit_qc_global_path(@qc_global) %> |
+<%= link_to 'Back', qc_globals_path %>

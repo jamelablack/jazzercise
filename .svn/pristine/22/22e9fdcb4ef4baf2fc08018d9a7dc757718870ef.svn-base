@@ -1,0 +1,74 @@
+<%= form_for(@person) do |f| %>
+  <% if @person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% @person.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="formitem">
+    <%= f.label :BirthDate %><br />
+    <%= f.text_field :BirthDate %>
+  </div>
+  <div class="formitem">
+    <%= f.label :EMail %><br />
+    <%= f.text_field :EMail %>
+  </div>
+  <div class="formitem">
+    <%= f.label :FirstName %><br />
+    <%= f.text_field :FirstName %>
+  </div>
+  <div class="formitem">
+    <%= f.label :FullName %><br />
+    <%= f.text_field :FullName %>
+  </div>
+  <div class="formitem">
+    <%= f.label :Gender %><br />
+    <%= f.text_field :Gender %>
+  </div>
+  <div class="formitem">
+    <%= f.label :LastName %><br />
+    <%= f.text_field :LastName %>
+  </div>
+  <div class="formitem">
+    <%= f.label :PhonePrimary %><br />
+    <%= f.text_field :PhonePrimary %>
+  </div>
+  <div class="formitem">
+    <%= f.label :PhoneSecondary %><br />
+    <%= f.text_field :PhoneSecondary %>
+  </div>
+   <div class="formitem">
+    <%= f.label :Instructor %><br />
+    <%= f.text_field :Instructor %>
+  </div>
+
+  <div class="formitem">
+    <%= f.label :SSN %><br />
+    <%= f.text_field :SSN %>
+  </div>
+  <div class="formitem checkbox">
+    <%= f.check_box :SendSpecials %>
+    <%= f.label :SendSpecials %>
+  </div>
+  <div class="formitem checkbox">
+    <%= f.check_box :SendCatalog %>
+    <%= f.label :SendCatalog %>
+  </div>
+  <div class="formitem checkbox">
+    <%= f.check_box :SendToOthers %>
+    <%= f.label :SendToOthers %>
+  </div>
+  <div class="formitem checkbox">
+    <%= f.check_box :SendNews %>
+    <%= f.label :SendNews %><br />
+  </div>
+  <div class="formitem button">
+    <%= f.submit %>
+  </div>
+<% end %>

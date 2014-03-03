@@ -1,0 +1,49 @@
+<%= form_for(@district) do |f| %>
+  <% if @district.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@district.errors.count, "error") %> prohibited this district from being saved:</h2>
+
+      <ul>
+      <% @district.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :DistrictName %><br />
+    <%= f.text_field :DistrictName %>
+  </div>
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :Deleted %><br />
+    <%= f.number_field :Deleted %>
+  </div>
+  <div class="field">
+    <%= f.label :CountryObjectID %><br />
+    <%= f.number_field :CountryObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :DistrictManagerObjectID %><br />
+    <%= f.number_field :DistrictManagerObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :StateObjectID %><br />
+    <%= f.number_field :StateObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :DistrictCode %><br />
+    <%= f.text_field :DistrictCode %>
+  </div>
+  <div class="field">
+    <%= f.label :CommissionPct %><br />
+    <%= f.text_field :CommissionPct %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

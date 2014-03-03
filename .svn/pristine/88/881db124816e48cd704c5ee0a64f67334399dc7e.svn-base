@@ -1,0 +1,17 @@
+class CreateWorkshops < ActiveRecord::Migration
+  def change
+    create_table :workshops do |t|
+      t.datetime :WorkshopStartDate
+      t.boolean :Complete
+      t.integer :ObjectID
+      t.string :City
+      t.integer :CountryObjectID
+      t.integer :StateObjectID
+      t.integer :DistrictObjectID
+      t.datetime :WorkshopEndDate
+      t.integer :TrainerObjectID
+
+      t.timestamps
+    end
+  end
+end

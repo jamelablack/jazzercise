@@ -1,0 +1,31 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+<h1>Listing people</h1>
+
+<table id="peoplelist" class="display" data-source="<%= people_url(format: "json") %>">
+<thead>
+  <tr>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Email</th>
+    <th>Birthdate</th>
+    <th>Gender</th>
+    <th>Instructor</th>
+
+  </tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Person', new_person_path %>
+
+ </div>
+  <div class="clr"></div>
+</div>

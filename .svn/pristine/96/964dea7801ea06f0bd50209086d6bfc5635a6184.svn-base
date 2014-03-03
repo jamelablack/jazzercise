@@ -1,0 +1,35 @@
+<h1>Listing qc_nextevals</h1>
+
+<table>
+  <tr>
+    <th>Lastevaldate</th>
+    <th>Lastevaldate</th>
+    <th>Instructorobjectid</th>
+    <th>Lastevalresult</th>
+    <th>Coordinatorobjectid</th>
+    <th>Video</th>
+    <th>Nextevaldate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qc_nextevals.each do |qc_nexteval| %>
+  <tr>
+    <td><%= qc_nexteval.LastEvalDate %></td>
+    <td><%= qc_nexteval.LastEvalDate %></td>
+    <td><%= qc_nexteval.InstructorObjectID %></td>
+    <td><%= qc_nexteval.LastEvalResult %></td>
+    <td><%= qc_nexteval.CoordinatorObjectID %></td>
+    <td><%= qc_nexteval.Video %></td>
+    <td><%= qc_nexteval.NextEvalDate %></td>
+    <td><%= link_to 'Show', qc_nexteval %></td>
+    <td><%= link_to 'Edit', edit_qc_nexteval_path(qc_nexteval) %></td>
+    <td><%= link_to 'Destroy', qc_nexteval, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Qc nexteval', new_qc_nexteval_path %>

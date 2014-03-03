@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Automaticrole:</b>
+  <%= @role.AutomaticRole %>
+</p>
+
+<p>
+  <b>Applicationname:</b>
+  <%= @role.ApplicationName %>
+</p>
+
+<p>
+  <b>Buttontext:</b>
+  <%= @role.ButtonText %>
+</p>
+
+<p>
+  <b>Objectid:</b>
+  <%= @role.ObjectID %>
+</p>
+
+<p>
+  <b>Plaintext:</b>
+  <%= @role.PlainText %>
+</p>
+
+<p>
+  <b>Templatename:</b>
+  <%= @role.TemplateName %>
+</p>
+
+<p>
+  <b>Timeout:</b>
+  <%= @role.TimeOut %>
+</p>
+
+<p>
+  <b>Lockout:</b>
+  <%= @role.LockOut %>
+</p>
+
+
+<%= link_to 'Edit', edit_role_path(@role) %> |
+<%= link_to 'Back', roles_path %>

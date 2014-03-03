@@ -1,0 +1,41 @@
+class CreateFacilities < ActiveRecord::Migration
+  def change
+    create_table :facilities do |t|
+      t.integer :ExWeb
+      t.string :EMail
+      t.integer :LocChange
+      t.integer :FacilityNumber
+      t.integer :Approved
+      t.string :AddressLocalArea
+      t.integer :ObjectID
+      t.datetime :EndMonth
+      t.integer :Deleted
+      t.integer :CenterCode
+      t.datetime :StartMonth
+      t.integer :InstructorObjectID
+      t.string :Name
+      t.string :Highway
+      t.string :Landmark
+      t.integer :DistrictObjectID
+      t.integer :AttributeCC
+      t.integer :AttributeCH
+      t.string :PhoneFax
+      t.string :PhonePrimary
+      t.string :Notes
+      t.integer :AttributeKD
+      t.integer :AttributeMA
+      t.integer :AttributeLK
+      t.integer :AttributeRB
+      t.integer :AttributeSH
+      t.integer :AttributeWF
+      t.integer :AttributePT
+      t.integer :AttributeST
+      t.integer :AttributeWT
+      t.integer :AttributeXT
+      t.string :PhoneSecondary
+      t.string :Directions
+
+      t.timestamps
+    end
+  end
+end

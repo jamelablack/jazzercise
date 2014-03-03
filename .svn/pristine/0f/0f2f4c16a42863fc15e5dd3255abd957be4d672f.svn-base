@@ -1,0 +1,12 @@
+class CreateJclsglobals < ActiveRecord::Migration
+  def change
+    create_table :jclsglobals do |t|
+      t.integer :ObjectID
+      t.string :FaxBodyText
+      t.integer :SearchRadius
+      t.string :FaxHeaderText
+
+      t.timestamps
+    end
+  end
+end

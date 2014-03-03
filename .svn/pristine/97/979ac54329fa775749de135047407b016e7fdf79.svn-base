@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category:</b>
+  <%= @jacs_global.Category %>
+</p>
+
+<p>
+  <b>Key name:</b>
+  <%= @jacs_global.Key_Name %>
+</p>
+
+<p>
+  <b>Str value:</b>
+  <%= @jacs_global.Str_Value %>
+</p>
+
+<p>
+  <b>Dec value:</b>
+  <%= @jacs_global.Dec_Value %>
+</p>
+
+<p>
+  <b>Datetime value:</b>
+  <%= @jacs_global.Datetime_Value %>
+</p>
+
+<p>
+  <b>Effective date:</b>
+  <%= @jacs_global.Effective_Date %>
+</p>
+
+
+<%= link_to 'Edit', edit_jacs_global_path(@jacs_global) %> |
+<%= link_to 'Back', jacs_globals_path %>

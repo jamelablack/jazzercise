@@ -1,0 +1,49 @@
+<%= form_for(@instructoraccount) do |f| %>
+  <% if @instructoraccount.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@instructoraccount.errors.count, "error") %> prohibited this instructoraccount from being saved:</h2>
+
+      <ul>
+      <% @instructoraccount.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ObjectID %><br />
+    <%= f.number_field :ObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br />
+    <%= f.text_field :Status %>
+  </div>
+  <div class="field">
+    <%= f.label :InstructorObjectID %><br />
+    <%= f.number_field :InstructorObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :FacilityObjectID %><br />
+    <%= f.number_field :FacilityObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :FranchiseObjectID %><br />
+    <%= f.number_field :FranchiseObjectID %>
+  </div>
+  <div class="field">
+    <%= f.label :NewInstructor %><br />
+    <%= f.number_field :NewInstructor %>
+  </div>
+  <div class="field">
+    <%= f.label :JBSAccountObjectID %><br />
+    <%= f.number_field :JBSAccountObjectID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

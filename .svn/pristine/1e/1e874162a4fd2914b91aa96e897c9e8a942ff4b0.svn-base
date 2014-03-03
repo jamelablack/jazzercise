@@ -1,0 +1,3 @@
+class Instructoraccount < ActiveRecord::Base
+  attr_accessible :FacilityObjectID, :FranchiseObjectID, :InstructorObjectID, :JBSAccountObjectID, :Name, :NewInstructor, :ObjectID, :Status
+end

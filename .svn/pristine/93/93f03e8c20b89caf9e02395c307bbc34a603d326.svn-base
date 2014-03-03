@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ObjectID: 1
+  AssociatedObjectID: 1
+  City: MyString
+  AddressType: MyString
+  CountryObjectID: 1
+  StateObjectID: 1
+  ZipCode: MyString
+  AssociatedType: MyString
+  Address1: MyString
+  Address2: MyString
+  Address3: MyString
+
+two:
+  ObjectID: 1
+  AssociatedObjectID: 1
+  City: MyString
+  AddressType: MyString
+  CountryObjectID: 1
+  StateObjectID: 1
+  ZipCode: MyString
+  AssociatedType: MyString
+  Address1: MyString
+  Address2: MyString
+  Address3: MyString

@@ -1,0 +1,47 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+<h1>Listing user_people</h1>
+
+<table>
+  <tr>
+    <th>Allowlogon</th>
+    <th>Autolockout</th>
+    <th>Deleteduseridkey</th>
+    <th>Deletedautolockoutkey</th>
+    <th>Deleted</th>
+    <th>Pwforcechange</th>
+    <th>Pwhelpanswer</th>
+    <th>Encuserid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_people.each do |user_person| %>
+  <tr>
+    <td><%= user_person.AllowLogon %></td>
+    <td><%= user_person.AutoLockout %></td>
+    <td><%= user_person.DeletedUserIDKey %></td>
+    <td><%= user_person.DeletedAutoLockoutKey %></td>
+    <td><%= user_person.Deleted %></td>
+    <td><%= user_person.PWForceChange %></td>
+    <td><%= user_person.PWHelpAnswer %></td>
+    <td><%= user_person.EncUserID %></td>
+    <td><%= link_to 'Show', user_person %></td>
+    <td><%= link_to 'Edit', edit_user_person_path(user_person) %></td>
+    <td><%= link_to 'Destroy', user_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User person', new_user_person_path %>
+
+</div>
+  <div class="clr"></div>
+</div>

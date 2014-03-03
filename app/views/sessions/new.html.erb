@@ -1,0 +1,27 @@
+<div id="form">
+	<div class="box big">
+		<h3>Log in to the JACS 2.0 Prototype</h3>
+		<p>Please enter your username and password below to log in. If you forgot your password, click on the "forgot password" link below.</p>
+
+<div id="flash">
+        <%=display_flash_info%>
+</div>
+
+<%= form_tag sessions_path do %>
+<div class="formitem">
+    <%= label_tag :email %><br />
+    <%= text_field_tag :email, params[:email], :size => 50%>
+  </div>
+<div class="formitem">
+    <%= label_tag :password %><br />
+    <%= password_field_tag :password,{},{:size => 50 }%>
+  </div>
+  <div class="formitem button"><%= submit_tag "Log in" %></div>
+<% end %>
+
+
+</div>
+<div class="box med">
+</div>
+<div class="clr"></div>
+</div>

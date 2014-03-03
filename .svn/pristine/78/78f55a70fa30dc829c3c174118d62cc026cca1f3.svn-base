@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  WorkshopStartDate: 2013-11-18 23:16:41
+  Complete: 1
+  ObjectID: 1
+  City: MyString
+  CountryObjectID: 1
+  StateObjectID: 1
+  DistrictObjectID: 1
+  WorkshopEndDate: 
+  TrainerObjectID: 1
+
+two:
+  WorkshopStartDate: 2013-11-18 23:16:41
+  Complete: 1
+  ObjectID: 1
+  City: MyString
+  CountryObjectID: 1
+  StateObjectID: 1
+  DistrictObjectID: 1
+  WorkshopEndDate: 
+  TrainerObjectID: 1

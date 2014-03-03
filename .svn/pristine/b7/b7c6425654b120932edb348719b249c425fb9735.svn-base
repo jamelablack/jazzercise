@@ -1,0 +1,36 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+
+<h1>Listing allglobals</h1>
+
+<table id="allglobalslist" class="display" data-source="<%= all_globals_url(format: "json") %>">
+<thead>
+  <tr>
+    <th>Category</th>
+    <th>Key name</th>
+    <th>Value type</th>
+    <th>Str value</th>
+    <th>Int value</th>
+    <th>Dec value</th>
+    <th>Date value</th>
+    <th>Boo value</th>
+    <th>Effective date</th>
+
+  </tr>
+
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New All global', new_all_global_path %>
+
+</div>
+  <div class="clr"></div>
+</div>

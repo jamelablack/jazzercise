@@ -1,0 +1,39 @@
+<h1>Listing workshops</h1>
+
+<table>
+  <tr>
+    <th>Workshopstartdate</th>
+    <th>Complete</th>
+    <th>Objectid</th>
+    <th>City</th>
+    <th>Countryobjectid</th>
+    <th>Stateobjectid</th>
+    <th>Districtobjectid</th>
+    <th>Workshopenddate</th>
+    <th>Trainerobjectid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @workshops.each do |workshop| %>
+  <tr>
+    <td><%= workshop.WorkshopStartDate %></td>
+    <td><%= workshop.Complete %></td>
+    <td><%= workshop.ObjectID %></td>
+    <td><%= workshop.City %></td>
+    <td><%= workshop.CountryObjectID %></td>
+    <td><%= workshop.StateObjectID %></td>
+    <td><%= workshop.DistrictObjectID %></td>
+    <td><%= workshop.WorkshopEndDate %></td>
+    <td><%= workshop.TrainerObjectID %></td>
+    <td><%= link_to 'Show', workshop %></td>
+    <td><%= link_to 'Edit', edit_workshop_path(workshop) %></td>
+    <td><%= link_to 'Destroy', workshop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Workshop', new_workshop_path %>

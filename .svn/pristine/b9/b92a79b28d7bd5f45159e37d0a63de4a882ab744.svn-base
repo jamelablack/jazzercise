@@ -1,0 +1,14 @@
+class CreateQcReports < ActiveRecord::Migration
+  def change
+    create_table :qc_reports do |t|
+      t.integer :ObjectID
+      t.datetime :ReportPeriod
+      t.datetime :PayrollPeriod
+      t.integer :CoordinatorObjectID
+      t.integer :IsApproved
+      t.integer :DMObjectID
+
+      t.timestamps
+    end
+  end
+end

@@ -1,0 +1,6 @@
+<h1>Editing cff</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @cff %> |
+<%= link_to 'Back', cffs_path %>

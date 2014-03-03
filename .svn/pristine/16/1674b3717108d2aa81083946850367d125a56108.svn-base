@@ -1,0 +1,49 @@
+require 'test_helper'
+
+class JacsGlobalsControllerTest < ActionController::TestCase
+  setup do
+    @jacs_global = jacs_globals(:one)
+  end
+
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:jacs_globals)
+  end
+
+  test "should get new" do
+    get :new
+    assert_response :success
+  end
+
+  test "should create jacs_global" do
+    assert_difference('JacsGlobal.count') do
+      post :create, jacs_global: { Category: @jacs_global.Category, Datetime_Value: @jacs_global.Datetime_Value, Dec_Value: @jacs_global.Dec_Value, Effective_Date: @jacs_global.Effective_Date, Key_Name: @jacs_global.Key_Name, Str_Value: @jacs_global.Str_Value }
+    end
+
+    assert_redirected_to jacs_global_path(assigns(:jacs_global))
+  end
+
+  test "should show jacs_global" do
+    get :show, id: @jacs_global
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit, id: @jacs_global
+    assert_response :success
+  end
+
+  test "should update jacs_global" do
+    put :update, id: @jacs_global, jacs_global: { Category: @jacs_global.Category, Datetime_Value: @jacs_global.Datetime_Value, Dec_Value: @jacs_global.Dec_Value, Effective_Date: @jacs_global.Effective_Date, Key_Name: @jacs_global.Key_Name, Str_Value: @jacs_global.Str_Value }
+    assert_redirected_to jacs_global_path(assigns(:jacs_global))
+  end
+
+  test "should destroy jacs_global" do
+    assert_difference('JacsGlobal.count', -1) do
+      delete :destroy, id: @jacs_global
+    end
+
+    assert_redirected_to jacs_globals_path
+  end
+end

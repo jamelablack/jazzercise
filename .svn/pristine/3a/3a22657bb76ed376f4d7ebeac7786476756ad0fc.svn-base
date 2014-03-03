@@ -1,0 +1,32 @@
+class CreateFranchises < ActiveRecord::Migration
+  def change
+    create_table :franchises do |t|
+      t.string :Comments
+      t.integer :PrintLetter
+      t.integer :FloatingSub
+      t.integer :InstructorAccountObjectID
+      t.integer :ObjectID
+      t.string :FranchiseTypeAddendum
+      t.datetime :DateAcknowledged
+      t.datetime :BeginningRptDate
+      t.integer :InstructorObjectID
+      t.datetime :DateAgreementSigned
+      t.datetime :DateTrainingMatSent
+      t.string :FranchiseType
+      t.integer :DistrictObjectID
+      t.datetime :ExpirationDate
+      t.datetime :CFFDate
+      t.string :FeeRcvd
+      t.decimal :FeeAmount
+      t.datetime :DateApplicationRcvd
+      t.datetime :DateCSPrinted
+      t.integer :Inactive
+      t.integer :DateAgreementSent
+      t.integer :CFFPctCalc
+      t.integer :MainFranchise
+      t.decimal :MonthlyMin, :precision => 13, :scale => 2
+
+      t.timestamps
+    end
+  end
+end

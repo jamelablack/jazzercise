@@ -1,0 +1,3 @@
+class Jclsglobal < ActiveRecord::Base
+  attr_accessible :FaxBodyText, :FaxHeaderText, :ObjectID, :SearchRadius
+end

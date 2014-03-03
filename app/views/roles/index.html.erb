@@ -1,0 +1,47 @@
+<div id="form">
+  <div class="box full">
+  
+    <div id="flash">
+        <%=display_flash_info%>
+    </div>
+<h1>Listing roles</h1>
+
+<table>
+  <tr>
+    <th>Automaticrole</th>
+    <th>Applicationname</th>
+    <th>Buttontext</th>
+    <th>Objectid</th>
+    <th>Plaintext</th>
+    <th>Templatename</th>
+    <th>Timeout</th>
+    <th>Lockout</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @roles.each do |role| %>
+  <tr>
+    <td><%= role.AutomaticRole %></td>
+    <td><%= role.ApplicationName %></td>
+    <td><%= role.ButtonText %></td>
+    <td><%= role.ObjectID %></td>
+    <td><%= role.PlainText %></td>
+    <td><%= role.TemplateName %></td>
+    <td><%= role.TimeOut %></td>
+    <td><%= role.LockOut %></td>
+    <td><%= link_to 'Show', role %></td>
+    <td><%= link_to 'Edit', edit_role_path(role) %></td>
+    <td><%= link_to 'Destroy', role, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Role', new_role_path %>
+
+ </div>
+  <div class="clr"></div>
+</div>
